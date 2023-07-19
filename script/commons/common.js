@@ -139,13 +139,6 @@ $(document).ready(function(){
   });
 
  //검색상세화면 뜨는 팝업
-   const appHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty('— app-height', `${window.innerHeight}px`)
-}
-$(window).on("resize",function(){
-  appHeight();
-})
  $('.searchInputW').on('click focus', function(){
   $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
