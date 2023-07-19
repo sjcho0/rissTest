@@ -147,10 +147,11 @@ $(window).on("resize",function(){
   appHeight();
 })
  $('.searchInputW').on('click focus', function(){
-  $('html, body').css({'overflow':'hidden','touch-action': 'none','-ms-touch-action': 'none'});
+  $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
+   $('#divSearch').css({'touch-action': 'none','-ms-touch-action': 'none'});
 });
 
 $('.searchClose').click(function(){
