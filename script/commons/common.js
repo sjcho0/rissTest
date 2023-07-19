@@ -144,11 +144,6 @@ $(document).ready(function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-	 $('#divSearch').scrollTop(0);
-	 $('html, body').scrollTop(0);
-	 
-
-	 
 });
 
 $('.searchClose').click(function(){
