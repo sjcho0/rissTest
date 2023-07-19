@@ -143,7 +143,9 @@ $(document).ready(function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  $('#divSearch .searchTop .searchInput').focus();
+   setTimeout(function(){
+    $('#divSearch .searchTop .searchInput').focus();
+   },700);
 });
 
 $('.searchClose').click(function(){
