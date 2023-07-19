@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/commons/reset.css">
+    <link rel="stylesheet" href="style/commons/font.css">
+    <link rel="stylesheet" href="style/commons/common.css">
+    <link rel="stylesheet" href="style/commons/popup.css">
+    <link rel="stylesheet" href="ui/swiper/swiper.min.css">
+    <link rel="stylesheet" href="style/main/main_k.css">
+    <!-- //stylesheet -->
+
+    <!-- script -->
+    <script src="ui/jquery-cdn/jquery-3.5.1.min.js"></script>
+    <script src="ui/swiper/swiper.min.js"></script>
+    <script src="script/commons/common.js"></script>
+    <script src="script/search/searchCommon.js"></script>
+    <script src="script/main/main_k.js"></script>
+    <!-- //script -->
+</head>
+
+<body>
+    <!-- divAccessibility -->
+    <div id="divAccessibility">
+        <ul>
+            <li>
+                <a href="#divSearch">검색 바로가기</a>
+            </li>
+            <li>
+                <a href="#divContent">본문 바로가기(skip to content)</a>
+            </li>
+            <li>
+                <a href="#divFooter">하단정보 바로가기</a>
+            </li>
+        </ul>
+    </div>
+    <!-- //divAccessibility -->
+
+    <!-- divWrapper -->
+    <div id="divWrapper">
+        <!-- blackBg -->
+        <span class="blackBg1"></span>
+        <!-- blackBg -->
+        <!-- mainPopup -->
+        <div class="mainPopup">
+            <div class="inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide popItem">
+                        <a href="" title="이달의 도서"><img src="images/main/mainPopBg1.png"></a>
+                    </div>
+                    <div class="swiper-slide popItem">
+                        <a href="" title="이달의 도서"><img src="images/main/mainPopBg2.png"></a>
+                    </div>
+                    <div class="swiper-slide popItem">
+                        <a href="" title="이달의 도서"><img src="images/main/mainPopBg1.png"></a>
+                    </div>
+                    <div class="swiper-slide popItem">
+                        <a href="" title="이달의 도서"><img src="images/main/mainPopBg2.png"></a>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="swiper-pagination"></div>
+                    <a class="popupClose" onclick="javascript:winClose();" title="오늘 하루 열지 않기">오늘 하루 열지 않기</a>
+                    <a class="popupClose" href="#" title="팝업 닫기">닫기</a>
+                </div>
+            </div>
+        </div>
+        <!-- mainPopup -->
+        <!-- divHeader -->
+        <div id="divHeader">
+            <div class="topFirstVisit">
+                <img src="images/main/compass.gif" alt="">
+                <p class="txt">RISS 처음 방문이세요?</p>
+            </div>
+            <h1 class="logo">
+                <a href="">
+                    <img src="images/main/logo.png">
+                </a>
+            </h1>
+            <div class="searchBorder">
+                <div class="searchInputW">
+                    <img src="images/main/rLogo_main.png" alt="RISS 서브로고" class="rLogo">
+                    <input type="text" class="searchInput" disabled placeholder="무엇을 찾고 계세요??">
+                    <input type="submit" class="searchBtn">
+                </div>
+            </div>
+        </div>
+        <!-- //divHeader -->
+
+        <!-- divSearch -->
+        <div id="divSearch">
+            <!-- searchTop -->
+            <div class="searchTop">
+                <a href="" class="searchClose" title="닫기">닫기</a>
+                <div class="searchBorder">
+                    <div class="searchInputW">
+                        <img src="images/commons/rLogo.png" alt="RISS 서브로고" class="rLogo">
+                        <input type="text" class="searchInput">
+                        <a href="" class="textDel">삭제</a>
+                        <input type="submit" class="searchBtn">
+                    </div>
+                </div>
+                <a href="" class="detailSearchBtn">상세검색</a>
+            </div>
+            <!-- //searchTop -->
+            
+            <!-- detailSearch -->
+            <div class="detailSearch">
+                <div class="detailShTop">
+                    <p class="tit">상세검색</p>
+                    <a href="" title="검색도움말">검색도움말</a>
+                </div>
+                <div class="detailShCont">
+                    <div class="detailShTab">
+                        <div class="inner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide tab on">
+                                    <a href="" title="국내학술논문">국내학술논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="학위논문">학위논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="해외학술논문">해외학술논문</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="학술지">학술지</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="단행본">단행본</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="연구보고서">연구보고서</a>
+                                </div>
+                                <div class="swiper-slide tab">
+                                    <a href="" title="공개강의">공개강의</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="toggleBtn" title="전체보기">버튼</a>
+                    </div>
+                    <div class="detailShTabContent">
+                        <div class="detailShInput">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option selected="selected">논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option selected="selected">저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option selected="selected">주제어</option>
+                                            <option>발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                        <a href="" class="addInput">추가</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option selected="selected">발행기관</option>
+                                            <option>초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                        <select class="selType3">
+                                            <option selected="selected">AND</option>
+                                            <option>OR</option>
+                                            <option>NOT</option>
+                                        </select>
+                                        <a href="" class="addInput">추가</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <select class="selType2">
+                                            <option>논문명</option>
+                                            <option>저자</option>
+                                            <option>주제어</option>
+                                            <option>발행기관</option>
+                                            <option selected="selected">초록</option>
+                                            <option>목차</option>
+                                            <option>전체</option>
+                                        </select>
+                                        <input type="text" class="inputType2">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="detailShTabContW">
+                            <!-- 국내학술논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">주제분류</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>인문학</option>
+                                                <option>사회과학</option>
+                                                <option>자연과학</option>
+                                                <option>공학</option>
+                                                <option>의약학</option>
+                                                <option>농수해양</option>
+                                                <option>예술체육</option>
+                                                <option>교육</option>
+                                                <option>복합학</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test1">
+                                                    <label for="test1"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test2">
+                                                    <label for="test2"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test3">
+                                                    <label for="test3"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test4">
+                                                    <label for="test4"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test5">
+                                                    <label for="test5"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문유무료</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test6">
+                                                    <label for="test6"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test7">
+                                                    <label for="test7"><span class="type">유료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test8">
+                                                    <label for="test8"><span class="type">무료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //국내학술논문 -->
+                            <!-- 학위논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">학위수여연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">학위유형</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test9">
+                                                    <label for="test9"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test10">
+                                                    <label for="test10"><span class="type">국내박사</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test11">
+                                                    <label for="test11"><span class="type">해외박사</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //학위논문 -->
+                            <!-- 해외학술논문 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test12">
+                                                    <label for="test12"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test13">
+                                                    <label for="test13"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test14">
+                                                    <label for="test14"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test15">
+                                                    <label for="test15"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test16">
+                                                    <label for="test16"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문유무</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test17">
+                                                    <label for="test17"><span class="type">원문있음</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test18">
+                                                    <label for="test18"><span class="type">원문없음</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문복사여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test19">
+                                                    <label for="test19"><span class="type">무료(FRIC)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test20">
+                                                    <label for="test20"><span class="type">유료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>        
+                            <!-- //해외학술논문 -->
+                            <!-- 학술지 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test6">
+                                                    <label for="test6"><span class="type">국내학술지</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test7">
+                                                    <label for="test7"><span class="type">해외학술지</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">등재여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test21">
+                                                    <label for="test21"><span class="type">SCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test22">
+                                                    <label for="test22"><span class="type">SCIE</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test23">
+                                                    <label for="test23"><span class="type">AHCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test24">
+                                                    <label for="test24"><span class="type">SSCI</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test25">
+                                                    <label for="test25"><span class="type">SCOPUS</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">원문복사여부</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test26">
+                                                    <label for="test26"><span class="type">무료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test27">
+                                                    <label for="test27"><span class="type">유료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //학술지 -->
+                            <!-- 단행본 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test28">
+                                                    <label for="test28"><span class="type">단행본</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test29">
+                                                    <label for="test29"><span class="type">비도서</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test30">
+                                                    <label for="test30"><span class="type">해외eBook</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test31">
+                                                    <label for="test31"><span class="type">국내eBook</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //단행본 -->
+                            <!-- 연구보고서 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">발행연도</p>
+                                        <div class="pubYear">
+                                            <input type="text" maxlength="4">
+                                            ~
+                                            <input type="text" maxlength="4">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test32">
+                                                    <label for="test32"><span class="type">한국연구재단(NRF)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test33">
+                                                    <label for="test33"><span class="type">dCollection</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test34">
+                                                    <label for="test34"><span class="type">국가정책연구포털(NKIS)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test35">
+                                                    <label for="test35"><span class="type">국립의과학지식센터(NCMIK)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test36">
+                                                    <label for="test36"><span class="type">교육유관기관지식나눔(Look)</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test37">
+                                                    <label for="test37"><span class="type">한국건설기술연구원</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test38">
+                                                    <label for="test38"><span class="type">기타기관</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //연구보고서 -->
+                            <!-- 공개강의 -->
+                            <div class="detailShTabCont">
+                                <ul>
+                                    <li>
+                                        <p class="tit">자료형태</p>
+                                        <div class="chkList">
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test39">
+                                                    <label for="test39"><span class="type">전체</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test40">
+                                                    <label for="test40"><span class="type">국내자료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test41">
+                                                    <label for="test41"><span class="type">해외자료</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" class="customChk2" id="test42">
+                                                    <label for="test42"><span class="type">OAI-PHM(OER)자료</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">작성언어</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>한국어</option>
+                                                <option>영어</option>
+                                                <option>중국어</option>
+                                                <option>일본어</option>
+                                                <option>독일어</option>
+                                                <option>프랑스어</option>
+                                                <option>스페인어</option>
+                                                <option>러시아어</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="tit">CCL 유형</p>
+                                        <div>
+                                            <select class="selType4">
+                                                <option selected="selected">전체</option>
+                                                <option>저작자표시</option>
+                                                <option>저작자표시-비영리</option>
+                                                <option>저작자표시-변경금지</option>
+                                                <option>저작자표시-동일조건변경허락</option>
+                                                <option>저작자표시-비영리-변경금지</option>
+                                                <option>저작자표시-비영리-동일조건변경허락</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //공개강의 -->
+                        </div>
+                        <div class="detailShBtns">
+                            <input type="reset" class="detailReset" value="초기화">
+                            <input type="submit" class="detailShBtn" value="검색">
+                        </div>
+                    </div>
+                </div>
+                <div class="detailSearchCloseW">
+                    <a href="" class="detailSearchClose" title="상세검색닫기">상세검색닫기</a>
+                </div>
+                
+            </div>
+            <!-- //detailSearch -->
+
+            <!-- searchHistory -->
+            <div class="searchHistory">
+                <div class="titArea">
+                    <p class="tit">최근검색어</p>
+                    <ul class="shManageW">
+                        <li>
+                            <a href="" class="shBtn" title="최근검색어 옵션">최근검색어 옵션</a>
+                            <ul class="shManage">
+                                <li class="allHistoryDel">
+                                    <a href="" title="전체삭제">전체삭제</a>
+                                </li>
+                                <li class="noAuto">
+                                    <a href="" title="자동저장끄기">자동저장끄기</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <!-- <p class="noHistory">최근 검색어가 없습니다.</p> -->
+                <ul>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="Korea journal">Korea journal</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="증강현실">증강현실</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="4차 산업혁명">4차 산업혁명</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="빅데이터">빅데이터</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="인공지능">인공지능</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>                    
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="education">education</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                       
+                    </li>
+                    <li>
+                        <div>
+                            <a href="" class="txt" title="자바">자바</a>
+                            <a href="" class="delete" title="삭제"><img src="images/commons/delType2.png" alt="최근검색어 삭제"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //searchHistory -->
+            <!-- keywordList -->
+            <div class="keywordList">
+                <div class="titArea">
+                    <p class="tit">인기검색어</p>
+                    <p class="date">2022-06-28 기준</p>
+                </div>
+                <ul>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">1</span>
+                            <span class="keyword">이종우</span>
+                            <span class="info up">&uarr;3</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">2</span>
+                            <span class="keyword">메타버스</span>
+                            <span class="info down">&darr;1</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">3</span>
+                            <span class="keyword">이우제</span>
+                            <span class="info down">&darr;1</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">4</span>
+                            <span class="keyword">여성</span>
+                            <span class="info down">&darr;1</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">5</span>
+                            <span class="keyword">정체성</span>
+                            <span class="info">-</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">6</span>
+                            <span class="keyword">바나나</span>
+                            <span class="info">-</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">7</span>
+                            <span class="keyword">스트레오 정합</span>
+                            <span class="info">-</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">8</span>
+                            <span class="keyword">다층분석</span>
+                            <span class="info">-</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">9</span>
+                            <span class="keyword">의사소통</span>
+                            <span class="info">-</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="">
+                            <span class="num">10</span>
+                            <span class="keyword">실수인식</span>
+                            <span class="info new">New</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //keywordList -->
+        </div>
+        <!-- //divSearch -->
+
+        <!-- divContent -->
+        <div id="divContent">
+            <!-- contents1 quickMenu -->
+            <div class="contents1">
+                <h2 class="skip">퀵메뉴</h2>
+                <ul class="quickMenu">
+                    <li class="quick1">
+                        <a href="">
+                            <span class="imgArea">
+                                <img src="images/main/quickIco1.png" alt="최신 인기 학술자료">
+                            </span>
+                            <span class="txt">최신/인기<br>학술자료</span>
+                        </a>
+                    </li>
+                    <li class="quick2">
+                        <a href="">
+                            <span class="imgArea">
+                                <img src="images/main/quickIco2.png" alt="RISS 활용도 분석">
+                            </span>
+                            <span class="txt">RISS<br>활용도 분석</span>
+                        </a>
+                    </li>
+                    <li class="quick3">
+                        <a href="">
+                            <span class="imgArea">
+                                <img src="images/main/quickIco3.png" alt="연구동향 분석">
+                            </span>
+                            <span class="txt">연구동향<br>분석</span>
+                        </a>
+                    </li>
+                    <li class="quick4">
+                        <a href="">
+                            <span class="imgArea">
+                                <img src="images/main/quickIco4.png" alt="RISS 이용안내">
+                            </span>
+                            <span class="txt">RISS<br>이용안내</span>
+                        </a>
+                    </li>
+                    <li class="quick5">
+                        <a href="">
+                            <span class="imgArea">
+                                <img src="images/main/quickIco5.png" alt="해외자료 신청(E-DDS)">
+                            </span>
+                            <span class="txt">해외자료<br>신청(E-DDS)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //contents1 quickMenu -->
+            <!-- contents2 notice -->
+            <div class="contents2">
+                <div class="popZone">
+                    <h2 class="contentTitle">RISS 지식더하기</h2>
+                    <div class="inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide popItem">
+                                <a href="" title="한글">
+                                    <img src="images/main/popBg1.png" alt="한글">
+                                </a>
+                            </div>
+                            <div class="swiper-slide popItem">
+                                <a href="" title="MZ가 생각하는 방식">
+                                    <img src="images/main/popBg2.png" alt="MZ가 생각하는 방식">
+                                </a>
+                            </div>
+                            <div class="swiper-slide popItem">
+                                <a href="" title="한글">
+                                    <img src="images/main/popBg1.png" alt="한글">
+                                </a>
+                            </div>
+                            <div class="swiper-slide popItem">
+                                <a href="" title="MZ가 생각하는 방식">
+                                    <img src="images/main/popBg2.png" alt="MZ가 생각하는 방식">
+                                </a>
+                            </div>
+                        </div>    
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <h2 class="contentTitle">공지사항</h2>
+                    <ul class="noticeList">
+                        <li>
+                            <a href="">
+                                <span class="tit">[안내] 더욱 편하게 바뀐 해외전자정보 RISS를 만나보세요!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="tit">[이벤트] RISSten up! 논문 들어보기 이벤트</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="tit">[안내] 7월 신규 학위논문, 학술지논문 원문 안내</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="tit">[이벤트] RISS 활용꿀팁 소문내기 이벤트</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="tit">[당첨자 안내] RISS 스탬프투어 이벤트 당첨자 안내RISS 스탬프투어 이벤트 당첨자 안내RISS 스탬프투어 이벤트 당첨자 안내</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //contents2 notice -->
+            <!-- contents3 academic -->
+            <div class="contents3">
+                <h2 class="contentTitle">주제별 인기 학술자료</h2>
+                <div class="academic">
+                    <ul class="academicTab">
+                        <li class="on">
+                            <a href="" title="국내학술지논문">국내학술지논문</a>
+                        </li>
+                        <li>
+                            <a href="" title="학위논문">학위논문</a>
+                        </li>
+                    </ul>
+                    <div class="academicContW">
+                        <div class="academicCont on">
+                            <div class="inner academicDepth2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide tab on">
+                                        <a href="" title="인문학">인문학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="사회과학">사회과학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="자연과학">자연과학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="공학">공학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="의약학">의약학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="농수해양">농수해양</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="예술체육">예술체육</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="교육">교육</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="복합학">복합학</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academicDepth3W">
+                                <!-- 인문학 -->
+                                <div class="acaInnerCont on">
+                                    <ul>
+                                        <li id="" class="on"><a href="" title="언어학">언어학</a></li>
+                                        <li id=""><a href="" title="문학일반">문학일반</a></li>
+                                        <li id=""><a href="" title="국어국문학">국어국문학</a></li>
+                                        <li id=""><a href="" title="영어영문학">영어영문학</a></li>
+                                        <li id=""><a href="" title="중국어문학">중국어문학</a></li>
+                                        <li id=""><a href="" title="일본어문학">일본어문학</a></li>
+                                        <li id=""><a href="" title="독일어문학">독일어문학</a></li>
+                                        <li id=""><a href="" title="러시아어문학">러시아어문학</a></li>
+                                        <li id=""><a href="" title="프랑스어문학">프랑스어문학</a></li>
+                                        <li id=""><a href="" title="스페인어문학">스페인어문학</a></li>
+                                        <li id=""><a href="" title="통역번역학">통역번역학</a></li>
+                                        <li id=""><a href="" title="외국어문학일반">외국어문학일반</a></li>
+                                        <li id=""><a href="" 철학ㆍ윤리">철학ㆍ윤리</a></li>
+                                        <li id=""><a href="" title="역사고고학">역사고고학</a></li>
+                                        <li id=""><a href="" title="종교학">종교학</a></li>
+                                        <li id=""><a href="" title="문헌정보학">문헌정보학</a></li>
+                                        <li id=""><a href="" title="인문학일반">인문학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //인문학 -->
+                                <!-- 사회과학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="경영학">경영학</a></li>
+                                        <li id=""><a href="" title="경제학">경제학</a></li>
+                                        <li id=""><a href="" title="금융ㆍ보험ㆍ회계ㆍ세무">금융ㆍ보험ㆍ회계ㆍ세무</a></li>
+                                        <li id=""><a href="" title="무역ㆍ유통ㆍ물류">무역ㆍ유통ㆍ물류</a></li>
+                                        <li id=""><a href="" title="관광학">관광학</a></li>
+                                        <li id=""><a href="" title="지적ㆍ부동산">지적ㆍ부동산</a></li>
+                                        <li id=""><a href="" title="법학">법학</a></li>
+                                        <li id=""><a href="" title="심리학">심리학</a></li>
+                                        <li id=""><a href="" title="사회학">사회학</a></li>
+                                        <li id=""><a href="" title="정치외교학">정치외교학</a></li>
+                                        <li id=""><a href="" title="국제학">국제학</a></li>
+                                        <li id=""><a href="" title="가족ㆍ사회복지학">가족ㆍ사회복지학</a></li>
+                                        <li id=""><a href="" title="언론ㆍ광고ㆍ방송ㆍ매체학">언론ㆍ광고ㆍ방송ㆍ매체학</a></li>
+                                        <li id=""><a href="" title="도시ㆍ지역ㆍ지리학">도시ㆍ지역ㆍ지리학</a></li>
+                                        <li id=""><a href="" title="행정학">행정학</a></li>
+                                        <li id=""><a href="" title="군사ㆍ국방ㆍ안보">군사ㆍ국방ㆍ안보</a></li>
+                                        <li id=""><a href="" title="문화ㆍ인류학">문화ㆍ인류학</a></li>
+                                        <li id=""><a href="" title="여성학">여성학</a></li>
+                                        <li id=""><a href="" title="사회과학일반">사회과학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //사회과학 -->
+                                <!-- 자연과학 -->
+                                <div class="acaInnerCont">
+                                    <ul> 
+                                        <li id=""><a href="" title="물리학">물리학</a></li>
+                                        <li id=""><a href="" title="수학">수학</a></li>
+                                        <li id=""><a href="" title="지구과학">지구과학</a></li>
+                                        <li id=""><a href="" title="천문기상학">천문기상학</a></li>
+                                        <li id=""><a href="" title="통계학">통계학</a></li>
+                                        <li id=""><a href="" title="생물학">생물학</a></li>
+                                        <li id=""><a href="" title="화학">화학</a></li>
+                                        <li id=""><a href="" title="가정학">가정학</a></li>
+                                        <li id=""><a href="" title="식품ㆍ조리ㆍ영양">식품ㆍ조리ㆍ영양</a></li>
+                                        <li id=""><a href="" title="의류ㆍ의상학">의류ㆍ의상학</a></li>
+                                        <li id=""><a href="" title="주거학">주거학</a></li>
+                                        <li id=""><a href="" title="아동학">아동학</a></li>
+                                        <li id=""><a href="" title="자연과학일반">자연과학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //자연과학 -->
+                                <!-- 공학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="건축ㆍ건설ㆍ도시공학">건축ㆍ건설ㆍ도시공학</a></li>
+                                        <li id=""><a href="" title="토목공학">토목공학</a></li>
+                                        <li id=""><a href="" title="환경공학">환경공학</a></li>
+                                        <li id=""><a href="" title="기계공학">기계공학</a></li>
+                                        <li id=""><a href="" title="조선ㆍ해양공학">조선ㆍ해양공학</a></li>
+                                        <li id=""><a href="" title="항공우주공학">항공우주공학</a></li>
+                                        <li id=""><a href="" title="자동차공학">자동차공학</a></li>
+                                        <li id=""><a href="" title="철도ㆍ교통공학">철도ㆍ교통공학</a></li>
+                                        <li id=""><a href="" title="금속공학">금속공학</a></li>
+                                        <li id=""><a href="" title="자원공학">자원공학</a></li>
+                                        <li id=""><a href="" title="재료ㆍ신소재공학">재료ㆍ신소재공학</a></li>
+                                        <li id=""><a href="" title="섬유공학">섬유공학</a></li>
+                                        <li id=""><a href="" title="전기공학">전기공학</a></li>
+                                        <li id=""><a href="" title="전자공학">전자공학</a></li>
+                                        <li id=""><a href="" title="제어계측공학">제어계측공학</a></li>
+                                        <li id=""><a href="" title="전산ㆍ컴퓨터공학">전산ㆍ컴퓨터공학</a></li>
+                                        <li id=""><a href="" title="정보통신공학">정보통신공학</a></li>
+                                        <li id=""><a href="" title="화학공학">화학공학</a></li>
+                                        <li id=""><a href="" title="광학ㆍ에너지">광학ㆍ에너지</a></li>
+                                        <li id=""><a href="" title="고분자공학">고분자공학</a></li>
+                                        <li id=""><a href="" title="원자력공학">원자력공학</a></li>
+                                        <li id=""><a href="" title="산업공학">산업공학</a></li>
+                                        <li id=""><a href="" title="안전ㆍ방재공학">안전ㆍ방재공학</a></li>
+                                        <li id=""><a href="" title="생명공학">생명공학</a></li>
+                                        <li id=""><a href="" title="공학일반">공학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //공학 -->
+                                <!-- 의약학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="해부학">해부학</a></li>
+                                        <li id=""><a href="" title="임상병리ㆍ진단학">임상병리ㆍ진단학</a></li>
+                                        <li id=""><a href="" title="예방의학">예방의학</a></li>
+                                        <li id=""><a href="" title="면역학">면역학</a></li>
+                                        <li id=""><a href="" title="내과">내과</a></li>
+                                        <li id=""><a href="" title="외과">외과</a></li>
+                                        <li id=""><a href="" title="소아청소년과">소아청소년과</a></li>
+                                        <li id=""><a href="" title="산부인과">산부인과</a></li>
+                                        <li id=""><a href="" title="정신의학">정신의학</a></li>
+                                        <li id=""><a href="" title="정형외과">정형외과</a></li>
+                                        <li id=""><a href="" title="성형외과">성형외과</a></li>
+                                        <li id=""><a href="" title="안과">안과</a></li>
+                                        <li id=""><a href="" title="이비인후과">이비인후과</a></li>
+                                        <li id=""><a href="" title="피부과">피부과</a></li>
+                                        <li id=""><a href="" title="비뇨기과">비뇨기과</a></li>
+                                        <li id=""><a href="" title="종양학">종양학</a></li>
+                                        <li id=""><a href="" title="마취통증의학">마취통증의학</a></li>
+                                        <li id=""><a href="" title="신경과학">신경과학</a></li>
+                                        <li id=""><a href="" title="가정의학">가정의학</a></li>
+                                        <li id=""><a href="" title="응급의학">응급의학</a></li>
+                                        <li id=""><a href="" title="방사선ㆍ영상ㆍ핵의학">방사선ㆍ영상ㆍ핵의학</a></li>
+                                        <li id=""><a href="" title="법의학">법의학</a></li>
+                                        <li id=""><a href="" title="의학일반">의학일반</a></li>
+                                        <li id=""><a href="" title="치의학">치의학</a></li>
+                                        <li id=""><a href="" title="한의학">한의학</a></li>
+                                        <li id=""><a href="" title="대체의학">대체의학</a></li>
+                                        <li id=""><a href="" title="수의학">수의학</a></li>
+                                        <li id=""><a href="" title="약학">약학</a></li>
+                                        <li id=""><a href="" title="간호학">간호학</a></li>
+                                        <li id=""><a href="" title="보건학">보건학</a></li>
+                                        <li id=""><a href="" title="재활ㆍ물리치료">재활ㆍ물리치료</a></li>
+                                        <li id=""><a href="" title="의료장비ㆍ의공학">의료장비ㆍ의공학</a></li>
+                                        <li id=""><a href="" title="의약학일반">의약학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //의약학 -->
+                                <!-- 농수해양 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="농학">농학</a></li>
+                                        <li id=""><a href="" title="산림">산림</a></li>
+                                        <li id=""><a href="" title="축산">축산</a></li>
+                                        <li id=""><a href="" title="수산">수산</a></li>
+                                        <li id=""><a href="" title="식품과학">식품과학</a></li>
+                                        <li id=""><a href="" title="조경">조경</a></li>
+                                        <li id=""><a href="" title="농업일반">농업일반</a></li>
+                                        <li id=""><a href="" title="해상운송학">해상운송학</a></li>
+                                        <li id=""><a href="" title="해양학">해양학</a></li>
+                                        <li id=""><a href="" title="농수해양일반">농수해양일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //농수해양 -->
+                                <!-- 예술체육 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="무용">무용</a></li>
+                                        <li id=""><a href="" title="체육">체육</a></li>
+                                        <li id=""><a href="" title="미술">미술</a></li>
+                                        <li id=""><a href="" title="디자인">디자인</a></li>
+                                        <li id=""><a href="" title="연극">연극</a></li>
+                                        <li id=""><a href="" title="영화">영화</a></li>
+                                        <li id=""><a href="" title="대중극예술">대중극예술</a></li>
+                                        <li id=""><a href="" title="음악">음악</a></li>
+                                        <li id=""><a href="" title="국악">국악</a></li>
+                                        <li id=""><a href="" title="대중음악">대중음악</a></li>
+                                        <li id=""><a href="" title="사진">사진</a></li>
+                                        <li id=""><a href="" title="만화ㆍ애니메이션">만화ㆍ애니메이션</a></li>
+                                        <li id=""><a href="" title="게임">게임</a></li>
+                                        <li id=""><a href="" title="영상">영상</a></li>
+                                        <li id=""><a href="" title="음향">음향</a></li>
+                                        <li id=""><a href="" title="미용">미용</a></li>
+                                        <li id=""><a href="" title="예술체육일반">예술체육일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //예술체육 -->
+                                <!-- 교육 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="유아교육">유아교육</a></li>
+                                        <li id=""><a href="" title="특수교육">특수교육</a></li>
+                                        <li id=""><a href="" title="초등교육">초등교육</a></li>
+                                        <li id=""><a href="" title="국어교육">국어교육</a></li>
+                                        <li id=""><a href="" title="영어교육">영어교육</a></li>
+                                        <li id=""><a href="" title="수학교육">수학교육</a></li>
+                                        <li id=""><a href="" title="사회교육">사회교육</a></li>
+                                        <li id=""><a href="" title="과학교육">과학교육</a></li>
+                                        <li id=""><a href="" title="음악교육">음악교육</a></li>
+                                        <li id=""><a href="" title="미술교육">미술교육</a></li>
+                                        <li id=""><a href="" title="체육교육">체육교육</a></li>
+                                        <li id=""><a href="" title="윤리교육">윤리교육</a></li>
+                                        <li id=""><a href="" title="역사교육">역사교육</a></li>
+                                        <li id=""><a href="" title="언어교육">언어교육</a></li>
+                                        <li id=""><a href="" title="실업ㆍ기술ㆍ가정교육">실업ㆍ기술ㆍ가정교육</a></li>
+                                        <li id=""><a href="" title="중등교육일반">중등교육일반</a></li>
+                                        <li id=""><a href="" title="교육학">교육학</a></li>
+                                        <li id=""><a href="" title="고등교육">고등교육</a></li>
+                                        <li id=""><a href="" title="평생ㆍ직업교육">평생ㆍ직업교육</a></li>
+                                        <li id=""><a href="" title="교육일반">교육일반</a></li>
+                                    </ul>
+                                </div>        
+                                <!-- //교육 -->
+                                <!-- 복합학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="기술정책ㆍ과학기술학">기술정책ㆍ과학기술학</a></li>
+                                        <li id=""><a href="" title="뇌ㆍ인지과학">뇌ㆍ인지과학</a></li>
+                                        <li id=""><a href="" title="감성과학">감성과학</a></li>
+                                        <li id=""><a href="" title="학제간연구">학제간연구</a></li>
+                                    </ul>
+                                </div>        
+                                <!-- //복합학 -->
+                            </div>
+                            <div class="academicItem">
+                                <ul>
+                                    <li>
+                                        <a href="" class="tit" title="Business 및 GL4Java로 구현한 인터넷 3D 기술 응용">Business 및 GL4Java로 구현한 인터넷 3D 기술 응용1</a>
+                                        <ul class="info">
+                                            <li>김명신 ( Kim myung-shin )</li>
+                                            <li>한국디자인트렌드학회</li>
+                                            <li>2007</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="온라인 운세 콘텐츠의 이용자들의 이용 만족과 불만족에 따른 회원 유지와 탈퇴에 대한 연구">온라인 운세 콘텐츠의 이용자들의 이용 만족과 불만족에 따른 회원 유지와 탈퇴에 대한 연구1</a>
+                                        <ul class="info">
+                                            <li>김명신 ( Kim myung-shin )</li>
+                                            <li>한국디자인트렌드학회</li>
+                                            <li>2007</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="미래 사회에서 메타버스 교육의 방향">미래 사회에서 메타버스 교육의 방향1</a>
+                                        <ul class="info">
+                                            <li>박상준</li>
+                                            <li>전주교육대학교 초등교육연구원</li>
+                                            <li>2021</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="MZ세대의 커뮤니케이션 고유 특성에 대한 각 세대별 반응 연구 -MZ세대, X세대, 베이비붐세대를 중심으로-">MZ세대의 커뮤니케이션 고유 특성에 대한 각 세대별 반응 연구 -MZ세대, X세대, 베이비붐세대를 중심으로-1</a>
+                                        <ul class="info">
+                                            <li>손정희 ( Shon Jung-hieh )</li>
+                                            <li>커뮤니케이션디자인학회</li>
+                                            <li>2021</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="academicCont">
+                            <div class="inner academicDepth2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide tab on">
+                                        <a href="" title="인문학">인문학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="사회과학">사회과학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="자연과학">자연과학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="공학">공학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="의약학">의약학</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="농수해양">농수해양</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="예술체육">예술체육</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="교육">교육</a>
+                                    </div>
+                                    <div class="swiper-slide tab">
+                                        <a href="" title="복합학">복합학</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academicDepth3W">
+                                <!-- 인문학 -->
+                                <div class="acaInnerCont on">
+                                    <ul>
+                                        <li id="" class="on"><a href="" title="언어학">언어학</a></li>
+                                        <li id=""><a href="" title="문학일반">문학일반</a></li>
+                                        <li id=""><a href="" title="국어국문학">국어국문학</a></li>
+                                        <li id=""><a href="" title="영어영문학">영어영문학</a></li>
+                                        <li id=""><a href="" title="중국어문학">중국어문학</a></li>
+                                        <li id=""><a href="" title="일본어문학">일본어문학</a></li>
+                                        <li id=""><a href="" title="독일어문학">독일어문학</a></li>
+                                        <li id=""><a href="" title="러시아어문학">러시아어문학</a></li>
+                                        <li id=""><a href="" title="프랑스어문학">프랑스어문학</a></li>
+                                        <li id=""><a href="" title="스페인어문학">스페인어문학</a></li>
+                                        <li id=""><a href="" title="통역번역학">통역번역학</a></li>
+                                        <li id=""><a href="" title="외국어문학일반">외국어문학일반</a></li>
+                                        <li id=""><a href="" 철학ㆍ윤리">철학ㆍ윤리</a></li>
+                                        <li id=""><a href="" title="역사고고학">역사고고학</a></li>
+                                        <li id=""><a href="" title="종교학">종교학</a></li>
+                                        <li id=""><a href="" title="문헌정보학">문헌정보학</a></li>
+                                        <li id=""><a href="" title="인문학일반">인문학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //인문학 -->
+                                <!-- 사회과학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="경영학">경영학</a></li>
+                                        <li id=""><a href="" title="경제학">경제학</a></li>
+                                        <li id=""><a href="" title="금융ㆍ보험ㆍ회계ㆍ세무">금융ㆍ보험ㆍ회계ㆍ세무</a></li>
+                                        <li id=""><a href="" title="무역ㆍ유통ㆍ물류">무역ㆍ유통ㆍ물류</a></li>
+                                        <li id=""><a href="" title="관광학">관광학</a></li>
+                                        <li id=""><a href="" title="지적ㆍ부동산">지적ㆍ부동산</a></li>
+                                        <li id=""><a href="" title="법학">법학</a></li>
+                                        <li id=""><a href="" title="심리학">심리학</a></li>
+                                        <li id=""><a href="" title="사회학">사회학</a></li>
+                                        <li id=""><a href="" title="정치외교학">정치외교학</a></li>
+                                        <li id=""><a href="" title="국제학">국제학</a></li>
+                                        <li id=""><a href="" title="가족ㆍ사회복지학">가족ㆍ사회복지학</a></li>
+                                        <li id=""><a href="" title="언론ㆍ광고ㆍ방송ㆍ매체학">언론ㆍ광고ㆍ방송ㆍ매체학</a></li>
+                                        <li id=""><a href="" title="도시ㆍ지역ㆍ지리학">도시ㆍ지역ㆍ지리학</a></li>
+                                        <li id=""><a href="" title="행정학">행정학</a></li>
+                                        <li id=""><a href="" title="군사ㆍ국방ㆍ안보">군사ㆍ국방ㆍ안보</a></li>
+                                        <li id=""><a href="" title="문화ㆍ인류학">문화ㆍ인류학</a></li>
+                                        <li id=""><a href="" title="여성학">여성학</a></li>
+                                        <li id=""><a href="" title="사회과학일반">사회과학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //사회과학 -->
+                                <!-- 자연과학 -->
+                                <div class="acaInnerCont">
+                                    <ul> 
+                                        <li id=""><a href="" title="물리학">물리학</a></li>
+                                        <li id=""><a href="" title="수학">수학</a></li>
+                                        <li id=""><a href="" title="지구과학">지구과학</a></li>
+                                        <li id=""><a href="" title="천문기상학">천문기상학</a></li>
+                                        <li id=""><a href="" title="통계학">통계학</a></li>
+                                        <li id=""><a href="" title="생물학">생물학</a></li>
+                                        <li id=""><a href="" title="화학">화학</a></li>
+                                        <li id=""><a href="" title="가정학">가정학</a></li>
+                                        <li id=""><a href="" title="식품ㆍ조리ㆍ영양">식품ㆍ조리ㆍ영양</a></li>
+                                        <li id=""><a href="" title="의류ㆍ의상학">의류ㆍ의상학</a></li>
+                                        <li id=""><a href="" title="주거학">주거학</a></li>
+                                        <li id=""><a href="" title="아동학">아동학</a></li>
+                                        <li id=""><a href="" title="자연과학일반">자연과학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //자연과학 -->
+                                <!-- 공학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="건축ㆍ건설ㆍ도시공학">건축ㆍ건설ㆍ도시공학</a></li>
+                                        <li id=""><a href="" title="토목공학">토목공학</a></li>
+                                        <li id=""><a href="" title="환경공학">환경공학</a></li>
+                                        <li id=""><a href="" title="기계공학">기계공학</a></li>
+                                        <li id=""><a href="" title="조선ㆍ해양공학">조선ㆍ해양공학</a></li>
+                                        <li id=""><a href="" title="항공우주공학">항공우주공학</a></li>
+                                        <li id=""><a href="" title="자동차공학">자동차공학</a></li>
+                                        <li id=""><a href="" title="철도ㆍ교통공학">철도ㆍ교통공학</a></li>
+                                        <li id=""><a href="" title="금속공학">금속공학</a></li>
+                                        <li id=""><a href="" title="자원공학">자원공학</a></li>
+                                        <li id=""><a href="" title="재료ㆍ신소재공학">재료ㆍ신소재공학</a></li>
+                                        <li id=""><a href="" title="섬유공학">섬유공학</a></li>
+                                        <li id=""><a href="" title="전기공학">전기공학</a></li>
+                                        <li id=""><a href="" title="전자공학">전자공학</a></li>
+                                        <li id=""><a href="" title="제어계측공학">제어계측공학</a></li>
+                                        <li id=""><a href="" title="전산ㆍ컴퓨터공학">전산ㆍ컴퓨터공학</a></li>
+                                        <li id=""><a href="" title="정보통신공학">정보통신공학</a></li>
+                                        <li id=""><a href="" title="화학공학">화학공학</a></li>
+                                        <li id=""><a href="" title="광학ㆍ에너지">광학ㆍ에너지</a></li>
+                                        <li id=""><a href="" title="고분자공학">고분자공학</a></li>
+                                        <li id=""><a href="" title="원자력공학">원자력공학</a></li>
+                                        <li id=""><a href="" title="산업공학">산업공학</a></li>
+                                        <li id=""><a href="" title="안전ㆍ방재공학">안전ㆍ방재공학</a></li>
+                                        <li id=""><a href="" title="생명공학">생명공학</a></li>
+                                        <li id=""><a href="" title="공학일반">공학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //공학 -->
+                                <!-- 의약학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="해부학">해부학</a></li>
+                                        <li id=""><a href="" title="임상병리ㆍ진단학">임상병리ㆍ진단학</a></li>
+                                        <li id=""><a href="" title="예방의학">예방의학</a></li>
+                                        <li id=""><a href="" title="면역학">면역학</a></li>
+                                        <li id=""><a href="" title="내과">내과</a></li>
+                                        <li id=""><a href="" title="외과">외과</a></li>
+                                        <li id=""><a href="" title="소아청소년과">소아청소년과</a></li>
+                                        <li id=""><a href="" title="산부인과">산부인과</a></li>
+                                        <li id=""><a href="" title="정신의학">정신의학</a></li>
+                                        <li id=""><a href="" title="정형외과">정형외과</a></li>
+                                        <li id=""><a href="" title="성형외과">성형외과</a></li>
+                                        <li id=""><a href="" title="안과">안과</a></li>
+                                        <li id=""><a href="" title="이비인후과">이비인후과</a></li>
+                                        <li id=""><a href="" title="피부과">피부과</a></li>
+                                        <li id=""><a href="" title="비뇨기과">비뇨기과</a></li>
+                                        <li id=""><a href="" title="종양학">종양학</a></li>
+                                        <li id=""><a href="" title="마취통증의학">마취통증의학</a></li>
+                                        <li id=""><a href="" title="신경과학">신경과학</a></li>
+                                        <li id=""><a href="" title="가정의학">가정의학</a></li>
+                                        <li id=""><a href="" title="응급의학">응급의학</a></li>
+                                        <li id=""><a href="" title="방사선ㆍ영상ㆍ핵의학">방사선ㆍ영상ㆍ핵의학</a></li>
+                                        <li id=""><a href="" title="법의학">법의학</a></li>
+                                        <li id=""><a href="" title="의학일반">의학일반</a></li>
+                                        <li id=""><a href="" title="치의학">치의학</a></li>
+                                        <li id=""><a href="" title="한의학">한의학</a></li>
+                                        <li id=""><a href="" title="대체의학">대체의학</a></li>
+                                        <li id=""><a href="" title="수의학">수의학</a></li>
+                                        <li id=""><a href="" title="약학">약학</a></li>
+                                        <li id=""><a href="" title="간호학">간호학</a></li>
+                                        <li id=""><a href="" title="보건학">보건학</a></li>
+                                        <li id=""><a href="" title="재활ㆍ물리치료">재활ㆍ물리치료</a></li>
+                                        <li id=""><a href="" title="의료장비ㆍ의공학">의료장비ㆍ의공학</a></li>
+                                        <li id=""><a href="" title="의약학일반">의약학일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //의약학 -->
+                                <!-- 농수해양 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="농학">농학</a></li>
+                                        <li id=""><a href="" title="산림">산림</a></li>
+                                        <li id=""><a href="" title="축산">축산</a></li>
+                                        <li id=""><a href="" title="수산">수산</a></li>
+                                        <li id=""><a href="" title="식품과학">식품과학</a></li>
+                                        <li id=""><a href="" title="조경">조경</a></li>
+                                        <li id=""><a href="" title="농업일반">농업일반</a></li>
+                                        <li id=""><a href="" title="해상운송학">해상운송학</a></li>
+                                        <li id=""><a href="" title="해양학">해양학</a></li>
+                                        <li id=""><a href="" title="농수해양일반">농수해양일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //농수해양 -->
+                                <!-- 예술체육 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="무용">무용</a></li>
+                                        <li id=""><a href="" title="체육">체육</a></li>
+                                        <li id=""><a href="" title="미술">미술</a></li>
+                                        <li id=""><a href="" title="디자인">디자인</a></li>
+                                        <li id=""><a href="" title="연극">연극</a></li>
+                                        <li id=""><a href="" title="영화">영화</a></li>
+                                        <li id=""><a href="" title="대중극예술">대중극예술</a></li>
+                                        <li id=""><a href="" title="음악">음악</a></li>
+                                        <li id=""><a href="" title="국악">국악</a></li>
+                                        <li id=""><a href="" title="대중음악">대중음악</a></li>
+                                        <li id=""><a href="" title="사진">사진</a></li>
+                                        <li id=""><a href="" title="만화ㆍ애니메이션">만화ㆍ애니메이션</a></li>
+                                        <li id=""><a href="" title="게임">게임</a></li>
+                                        <li id=""><a href="" title="영상">영상</a></li>
+                                        <li id=""><a href="" title="음향">음향</a></li>
+                                        <li id=""><a href="" title="미용">미용</a></li>
+                                        <li id=""><a href="" title="예술체육일반">예술체육일반</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //예술체육 -->
+                                <!-- 교육 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="유아교육">유아교육</a></li>
+                                        <li id=""><a href="" title="특수교육">특수교육</a></li>
+                                        <li id=""><a href="" title="초등교육">초등교육</a></li>
+                                        <li id=""><a href="" title="국어교육">국어교육</a></li>
+                                        <li id=""><a href="" title="영어교육">영어교육</a></li>
+                                        <li id=""><a href="" title="수학교육">수학교육</a></li>
+                                        <li id=""><a href="" title="사회교육">사회교육</a></li>
+                                        <li id=""><a href="" title="과학교육">과학교육</a></li>
+                                        <li id=""><a href="" title="음악교육">음악교육</a></li>
+                                        <li id=""><a href="" title="미술교육">미술교육</a></li>
+                                        <li id=""><a href="" title="체육교육">체육교육</a></li>
+                                        <li id=""><a href="" title="윤리교육">윤리교육</a></li>
+                                        <li id=""><a href="" title="역사교육">역사교육</a></li>
+                                        <li id=""><a href="" title="언어교육">언어교육</a></li>
+                                        <li id=""><a href="" title="실업ㆍ기술ㆍ가정교육">실업ㆍ기술ㆍ가정교육</a></li>
+                                        <li id=""><a href="" title="중등교육일반">중등교육일반</a></li>
+                                        <li id=""><a href="" title="교육학">교육학</a></li>
+                                        <li id=""><a href="" title="고등교육">고등교육</a></li>
+                                        <li id=""><a href="" title="평생ㆍ직업교육">평생ㆍ직업교육</a></li>
+                                        <li id=""><a href="" title="교육일반">교육일반</a></li>
+                                    </ul>
+                                </div>        
+                                <!-- //교육 -->
+                                <!-- 복합학 -->
+                                <div class="acaInnerCont">
+                                    <ul>
+                                        <li id=""><a href="" title="기술정책ㆍ과학기술학">기술정책ㆍ과학기술학</a></li>
+                                        <li id=""><a href="" title="뇌ㆍ인지과학">뇌ㆍ인지과학</a></li>
+                                        <li id=""><a href="" title="감성과학">감성과학</a></li>
+                                        <li id=""><a href="" title="학제간연구">학제간연구</a></li>
+                                    </ul>
+                                </div>        
+                                <!-- //복합학 -->
+                            </div>
+                            <div class="academicItem">
+                                <ul>
+                                    <li>
+                                        <a href="" class="tit" title="Business 및 GL4Java로 구현한 인터넷 3D 기술 응용">Business 및 GL4Java로 구현한 인터넷 3D 기술 응용2</a>
+                                        <ul class="info">
+                                            <li>김명신 ( Kim myung-shin )</li>
+                                            <li>한국디자인트렌드학회</li>
+                                            <li>2007</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="온라인 운세 콘텐츠의 이용자들의 이용 만족과 불만족에 따른 회원 유지와 탈퇴에 대한 연구">온라인 운세 콘텐츠의 이용자들의 이용 만족과 불만족에 따른 회원 유지와 탈퇴에 대한 연구2</a>
+                                        <ul class="info">
+                                            <li>김명신 ( Kim myung-shin )</li>
+                                            <li>한국디자인트렌드학회</li>
+                                            <li>2007</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="미래 사회에서 메타버스 교육의 방향">미래 사회에서 메타버스 교육의 방향2</a>
+                                        <ul class="info">
+                                            <li>박상준</li>
+                                            <li>전주교육대학교 초등교육연구원</li>
+                                            <li>2021</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="tit" title="MZ세대의 커뮤니케이션 고유 특성에 대한 각 세대별 반응 연구 -MZ세대, X세대, 베이비붐세대를 중심으로-">MZ세대의 커뮤니케이션 고유 특성에 대한 각 세대별 반응 연구 -MZ세대, X세대, 베이비붐세대를 중심으로-2</a>
+                                        <ul class="info">
+                                            <li>손정희 ( Shon Jung-hieh )</li>
+                                            <li>커뮤니케이션디자인학회</li>
+                                            <li>2021</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //contents3 academic -->
+        </div>
+        <!-- //divContent -->
+
+        <div id="divFooter">
+            <div class="sns">
+                <ul>
+                    <li class="insta">
+                        <a href="" title="인스타그램">인스타그램</a>
+                    </li>
+                    <li class="facebook">
+                        <a href="" title="페이스북">페이스북</a>
+                    </li>
+                    <li class="youtube">
+                        <a href="" title="유튜브">유튜브</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerInfo">
+                <address>41061 대구광역시 동구 동내로 64(동내동1119) KERIS빌딩</address>
+                <p class="call">고객센터 (평일: 09:00 ~ 18:00)<span>1599-3122</span></p>
+                <p class="copy">Copyright© KERIS. ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footerMenu">
+                <ul>
+                    <li>
+                        <a href="" title="이용약관" class="clauseBtn">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="" title="개인정보처리방침">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="" title="개인정보 재동의">개인정보 재동의</a>
+                    </li>
+                    <li>
+                        <a href="" title="기관소개">기관소개</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="goPC"><a href="#" title="PC 버전 바로가기">PC 버전 바로가기</a></p>
+        </div>
+        <div class="floating">
+            <ul class="menu">
+                <li class="allMenu">
+                    <a href="" title="메뉴">메뉴</a>
+                </li>
+                <li class="firstVisit">
+                    <a href="" title="처음방문이세요">처음방문이세요</a>
+                </li>
+                <li class="home">
+                    <a href="" title="홈">홈</a>
+                </li>
+                <li class="myriss">
+                    <a href="" title="MyRISS">MyRISS</a>
+                </li>
+                <li class="foreign">
+                    <a href="https://seonuk4444.github.io/main_f.html" title="해외전자정보이동버튼">
+                        <span class="txt">
+                            <strong>GO</strong>
+                            해외전자<br>정보
+                        </span>
+                        <svg class="floatLogo" width="140" height="120" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="c1" opacity="0.4"
+                                d="M7.79 3.3C6.51 1.94 3.19 0.48 1.45 2C-0.18 3.64 1.06 7.04 2.34 8.41C3.61 9.82 6.05 9.92 7.62 8.58C9.06 7.09 9.12 4.66 7.79 3.3Z"
+                                fill="#4949EB" />
+                            <path class="c2" opacity="0.25"
+                                d="M7.1 8.47C8.37 6.93 9.46 3.2 7.6 1.57C5.64 0.0600002 2.2 1.85 0.93 3.4C-0.39 4.94 -0.16 7.53 1.48 9.02C3.26 10.34 5.85 10.06 7.1 8.47Z"
+                                fill="#4949EB" />
+                            <path opacity="0.5"
+                                d="M5.18 9.01C3.75 8.95 1.12 7.66 1.11 6.14C1.09 4.4 3.57 1.45 5.23 1.87C6.84 2.08 7.98 4.64 8.05 6.14C8 7.57 6.64 8.97 5.18 9.01Z"
+                                fill="#4949EB" />
+                            <path class="c3" opacity="0.25"
+                                d="M2.05 8.7C3.81 9.64 7.68 9.98 8.91 7.83C10 5.62 7.57 2.6 5.8 1.66C4.03 0.67 1.54 1.4 0.4 3.3C-0.54 5.3 0.24 7.79 2.05 8.7Z"
+                                fill="#4949EB" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- wholeMenu -->
+        <div class="wholeMenu">
+            <div class="wholeMenuTop">
+                <div class="wholeBtns">
+                    <a href="" class="setting" title="설정"></a>
+                    <a href="" title="닫기" class="wholeMenuClose"></a>
+                </div>
+                <div class="loginW">
+                    <div class="userInfo">
+                        <p class="user"><span>퓨쳐누리</span> 님</p>
+                    </div>
+                    <div class="loginBtns">
+                        <!-- <a href="" title="로그인" class="login">로그인</a> -->
+                        <a href="" title="로그아웃" class="logout">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wholeMenuCont">
+                <!-- wholeMenuNav -->
+                <div class="wholeMenuNav">
+                    <div class="inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tab on">
+                                <a href="#wm1" title="학술연구정보서비스 검색">학술연구정보서비스 검색</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm2" title="MYRISS">MYRISS</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm3" title="회원서비스">회원서비스</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm4" title="회원서비스">설정</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm5" title="About RISS">About RISS</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm6" title="RISS 처음 방문 이세요?">RISS 처음 방문 이세요?</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm7" title="고객센터">고객센터</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm8" title="RISS 활용도 분석">RISS 활용도 분석</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm9" title="최신/인기 학술자료">최신/인기 학술자료</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm10" title="해외자료신청(E-DDS)">해외자료신청(E-DDS)</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm11" title="공지사항">공지사항</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm12" title="해외전자정보서비스 검색">해외전자정보서비스 검색</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm13" title="Databases & Journals">Databases & Journals</a>
+                            </div>
+                            <div class="swiper-slide tab">
+                                <a href="#wm14" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //wholeMenuNav -->
+                <div class="wholeMenuList">
+                    <ul>
+                        <!-- 학술연구정보서비스 검색 -->
+                        <li id="wm1" class="fixEdit">
+                            <a href="" title="학술연구정보서비스 검색" class="tit">학술연구정보서비스 검색</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="통합검색">통합검색</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학위논문">학위논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="국내학술논문">국내학술논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외학술논문">해외학술논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술지">학술지</a>
+                                </li>
+                                <li>
+                                    <a href="" title="단행본">단행본</a>
+                                </li>
+                                <li>
+                                    <a href="" title="연구보고서">연구보고서</a>
+                                </li>
+                                <li>
+                                    <a href="" title="공개강의">공개강의</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //학술연구정보서비스 검색 -->
+                        <!-- MyRISS -->
+                        <li id="wm2" class="fixEdit">
+                            <a href="" title="MyRISS" class="tit">MyRISS</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="내 추천논문">내 추천논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 책장">내 책장</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 최근 본 논문">내 최근 본 논문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 저작물관리">내 저작물관리</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 구매·신청 현황">내 구매·신청 현황</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 서비스 사용권한">내 서비스 사용권한</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 관심 DB">내 관심 DB</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //MyRISS -->
+                        <!-- 회원서비스 -->
+                        <li id="wm3" class="fixEdit">
+                            <a href="" title="회원서비스" class="tit">회원서비스</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="회원가입">회원가입</a>
+                                </li>
+                                <li>
+                                    <a href="" title="로그인">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="" title="아이디 찾기">아이디 찾기</a>
+                                </li>
+                                <li>
+                                    <a href="" title="비밀번호 찾기">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //회원서비스 -->
+                        <!-- 설정 -->
+                        <li id="wm4" class="fixEdit">
+                            <a href="" title="설정" class="tit">설정</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="내 정보">내 정보</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //설정 -->
+                        <!-- About RISS -->
+                        <li id="wm5" class="fixEdit">
+                            <a href="" title="About RISS" class="tit">About RISS</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="RISS 홍보관">RISS 홍보관</a>
+                                </li>
+                                <li>
+                                    <a href="" title="DB연계 현황">DB연계 현황</a>
+                                </li>
+                                <li>
+                                    <a href="" title="이용안내">이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="소식지">소식지</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //About RISS -->
+                        <!-- RISS 처음 방문 이세요? -->
+                        <li id="wm6" class="fixEdit">
+                            <a href="" title="RISS 처음 방문 이세요?" class="tit">RISS 처음 방문 이세요?</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="RISS란?">RISS란?</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 이용권한">RISS 이용권한</a>
+                                </li>
+                                <li>
+                                    <a href="" title="내 관심논문 등록방법">내 관심논문 등록방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외전자자료 이용방법">해외전자자료 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 정보취약계층 서비스 이용방법">RISS 정보취약계층 서비스 이용방법</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //RISS 처음 방문 이세요? -->
+                        <!-- 고객센터 -->
+                        <li id="wm7" class="fixEdit">
+                            <a href="" title="고객센터" class="tit">고객센터</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="자주 찾는 질문">자주 찾는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="" title="상담 신청">상담 신청</a>
+                                </li>
+                                <li>
+                                    <a href="" title="상담 내역 확인">상담 내역 확인</a>
+                                </li>
+                                <li>
+                                    <a href="" title="RISS 자료 유형별 이용방법">RISS 자료 유형별 이용방법</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출 이용방법">복사/대출 이용방법</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //고객센터 -->
+                        <!-- RISS 활용도 분석 -->
+                        <li id="wm8" class="fixEdit">
+                            <a href="" title="RISS 활용도 분석" class="tit">RISS 활용도 분석</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="자료 현황 통계">자료 현황 통계</a>
+                                </li>
+                                <li>
+                                    <a href="" title="주제별 활용통계 분석">주제별 활용통계 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술지 활용도 분석">학술지 활용도 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="원문다운로드 분석">원문다운로드 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출제공 기관 분석">복사/대출제공 기관 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="복사/대출신청 기관 분석">복사/대출신청 기관 분석</a>
+                                </li>
+                                <li>
+                                    <a href="" title="활용도 높은 주제">활용도 높은 주제</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //RISS 활용도 분석 -->
+                        <!-- 최신/인기 학술자료 -->
+                        <li id="wm9" class="fixEdit">
+                            <a href="" title="최신/인기 학술자료" class="tit">최신/인기 학술자료</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="최신자료">최신자료</a>
+                                </li>
+                                <li>
+                                    <a href="" title="인기자료">인기자료</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //최신/인기 학술자료 -->
+                        <!-- 해외자료신청(E-DDS) -->
+                        <li id="wm10" class="fixEdit">
+                            <a href="" title="해외자료신청(E-DDS)" class="tit">해외자료신청(E-DDS)</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="비용지원 서비스 안내">비용지원 서비스 안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="도움말">도움말</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외자료신청(E-DDS) 신청">해외자료신청(E-DDS) 신청</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외자료신청(E-DDS) -->
+                        <!-- 공지사항 -->
+                        <li id="wm11" class="fixEdit">
+                            <a href="" title="공지사항" class="tit">공지사항</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="공지사항">공지사항</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //공지사항 -->
+                        <!-- 해외전자정보서비스 검색 -->
+                        <li id="wm12" class="fixEdit">
+                            <a href="" title="해외전자정보서비스 검색" class="tit">해외전자정보서비스 검색</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="Academic Journals">Academic Journals</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Ebooks">Ebooks</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Dissertations">Dissertations</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Conference Materials">Conference Materials</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Reviews">Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Reports">Reports</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외전자정보서비스 검색 -->
+                        <!-- Databases & Journals -->
+                        <li id="wm13" class="fixEdit">
+                            <a href="" title="Databases & Journals" class="tit">Databases & Journals</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="전자저널 리스트">전자저널 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="" title="학술DB 리스트">학술DB 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="" title="주제별 리스트">주제별 리스트</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //Databases & Journals -->
+                        <!-- 해외전자자료 이용안내 -->
+                        <li id="wm14" class="fixEdit">
+                            <a href="" title="해외전자자료 이용안내" class="tit">해외전자자료 이용안내</a>
+                            <!-- depth2 -->
+                            <ul>
+                                <li>
+                                    <a href="" title="해외전자자료 이용안내">해외전자자료 이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외DB 구독대학">해외DB 구독대학</a>
+                                </li>
+                                <li>
+                                    <a href="" title="해외DB 상세정보">해외DB 상세정보</a>
+                                </li>
+                            </ul>
+                            <!-- //depth2 -->
+                        </li>
+                        <!-- //해외전자자료 이용안내 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //wholeMenu -->
+
+        <!-- clausePop -->
+        <div class="divPopup clausePop">
+            <div class="popHeader">
+                <div class="titArea">
+                    <p class="tit">이용약관</p>
+                    <a href="" class="divPopupClose clausePopClose" title="닫기">닫기</a>
+                </div>
+            </div>
+            <div class="popCont">
+                <div class="clause">
+                    <p class="clauseTit">학술연구정보서비스 이용약관 (2017년 1월 1일 ~ 현재 적용)</p>
+                    <ol>
+                        <li>
+                            <h2>제 1 장 총칙</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 1 조 (목적)</h3>
+                                    <ul>
+                                        <li>이 약관은 한국교육학술정보원(이하 "교육정보원"라 함)이 제공하는 학술연구정보서비스의 웹사이트(이하 "서비스" 라함)의 이용에 관한 조건 및 절차와 기타 필요한 사항을
+                                            규정하는 것을 목적으로 합니다.</li>
+                                    </ul>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 2 조 (약관의 효력과 변경)</h3>
+                                    <ol>
+                                        <li>① 이 약관은 서비스 메뉴에 게시하여 공시함으로써 효력을 발생합니다.</li>
+                                        <li>② 교육정보원은 합리적 사유가 발생한 경우에는 이 약관을 변경할 수 있으며, 약관을 변경한 경우에는 지체없이 "공지사항"을 통해 공시합니다.</li>
+                                        <li>③ 이용자는 변경된 약관사항에 동의하지 않으면, 언제나 서비스 이용을 중단하고 이용계약을 해지할 수 있습니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 3 조 (약관외 준칙)</h3>
+                                    <ul>
+                                        <li>이 약관에 명시되지 않은 사항은 관계 법령에 규정 되어있을 경우 그 규정에 따르며, 그렇지 않은 경우에는 일반적인 관례에 따릅니다.</li>
+                                    </ul>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 4 조 (용어의 정의)</h3>
+                                    이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                                    <ol>
+                                        <li>① 이용자 : 교육정보원과 이용계약을 체결한 자</li>
+                                        <li>② 이용자번호(ID) : 이용자 식별과 이용자의 서비스 이용을 위하여 이용계약 체결시 이용자의 선택에 의하여 교육정보원이 부여하는 문자와 숫자의 조합</li>
+                                        <li>③ 비밀번호 : 이용자 자신의 비밀을 보호하기 위하여 이용자 자신이 설정한 문자와 숫자의 조합</li>
+                                        <li>④ 단말기 : 서비스 제공을 받기 위해 이용자가 설치한 개인용 컴퓨터 및 모뎀 등의 기기</li>
+                                        <li>⑤ 서비스 이용 : 이용자가 단말기를 이용하여 교육정보원의 주전산기에 접속하여 교육정보원이 제공하는 정보를 이용하는 것</li>
+                                        <li>⑥ 이용계약 : 서비스를 제공받기 위하여 이 약관으로 교육정보원과 이용자간의 체결하는 계약을 말함</li>
+                                        <li>⑦ 마일리지 : RISS 서비스 중 마일리지 적립 가능한 서비스를 이용한 이용자에게 지급되며, RISS가 제공하는 특정 디지털 콘텐츠를 구입하는 데 사용하도록 만들어진
+                                            포인트</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 2 장 서비스 이용 계약</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 5 조 (이용계약의 성립)</h3>
+                                    <ol>
+                                        <li>① 이용계약은 이용자의 이용신청에 대한 교육정보원의 이용 승낙에 의하여 성립됩니다.</li>
+                                        <li>② 제 1항의 규정에 의해 이용자가 이용 신청을 할 때에는 교육정보원이 이용자 관리시 필요로 하는<br>사항을 전자적방식(교육정보원의 컴퓨터 등 정보처리 장치에 접속하여
+                                            데이터를 입력하는 것을 말합니다)<br>이나 서면으로 하여야 합니다.</li>
+                                        <li>③ 이용계약은 이용자번호 단위로 체결하며, 체결단위는 1 이용자번호 이상이어야 합니다.</li>
+                                        <li>④ 서비스의 대량이용 등 특별한 서비스 이용에 관한 계약은 별도의 계약으로 합니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 6 조 (이용신청)</h3>
+                                    <ol>
+                                        <li>① 서비스를 이용하고자 하는 자는 교육정보원이 지정한 양식에 따라 온라인신청을 이용하여 가입 신청을 해야 합니다.</li>
+                                        <li>② 이용신청자가 14세 미만인자일 경우에는 친권자(부모, 법정대리인 등)의 동의를 얻어 이용신청을 하여야 합니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 7 조 (이용계약 승낙의 유보)</h3>
+                                    <ol>
+                                        <li>① 교육정보원은 다음 각 호에 해당하는 경우에는 이용계약의 승낙을 유보할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 설비에 여유가 없는 경우</li>
+                                                <li>2. 기술상에 지장이 있는 경우</li>
+                                                <li>3. 이용계약을 신청한 사람이 14세 미만인 자로 친권자의 동의를 득하지 않았을 경우</li>
+                                                <li>4. 기타 교육정보원이 서비스의 효율적인 운영 등을 위하여 필요하다고 인정되는 경우</li>
+                                            </ol>
+                                        </li>
+                                        <li>② 교육정보원은 다음 각 호에 해당하는 이용계약 신청에 대하여는 이를 거절할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 다른 사람의 명의를 사용하여 이용신청을 하였을 때</li>
+                                                <li>2. 이용계약 신청서의 내용을 허위로 기재하였을 때</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 8 조 (계약사항의 변경)</h3>이용자는 다음 사항을 변경하고자 하는 경우 서비스에 접속하여 서비스 내의 기능을 이용하여 변경할 수
+                                    있습니다.
+                                    <ol>
+                                        <li>① 성명 및 생년월일, 신분, 이메일</li>
+                                        <li>② 비밀번호</li>
+                                        <li>③ 자료신청 / 기관회원서비스 권한설정을 위한 이용자정보</li>
+                                        <li>④ 전화번호 등 개인 연락처</li>
+                                        <li>⑤ 기타 교육정보원이 인정하는 경미한 사항</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 3 장 서비스의 이용</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 9 조 (서비스 이용시간)</h3>
+                                    <ul>
+                                        <li>서비스의 이용 시간은 교육정보원의 업무 및 기술상 특별한 지장이 없는 한 연중무휴, 1일 24시간(00:00-24:00)을 원칙으로 합니다. 다만 정기점검등의 필요로
+                                            교육정보원이 정한 날이나 시간은 그러하지 아니합니다.</li>
+                                    </ul>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 10 조 (이용자번호 등)</h3>
+                                    <ol>
+                                        <li>① 이용자번호 및 비밀번호에 대한 모든 관리책임은 이용자에게 있습니다.</li>
+                                        <li>② 명백한 사유가 있는 경우를 제외하고는 이용자가 이용자번호를 공유, 양도 또는 변경할 수 없습니다.</li>
+                                        <li>③ 이용자에게 부여된 이용자번호에 의하여 발생되는 서비스 이용상의 과실 또는 제3자에 의한 부정사용 등에 대한 모든 책임은 이용자에게 있습니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 11 조 (서비스 이용의 제한 및 이용계약의 해지)</h3>
+                                    <ol>
+                                        <li>① 이용자가 서비스 이용계약을 해지하고자 하는 때에는 온라인으로 교육정보원에 해지신청을 하여야 합니다.</li>
+                                        <li>② 교육정보원은 이용자가 다음 각 호에 해당하는 경우 사전통지 없이 이용계약을 해지하거나 전부 또는 일부의 서비스 제공을 중지할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 타인의 이용자번호를 사용한 경우</li>
+                                                <li>2. 다량의 정보를 전송하여 서비스의 안정적 운영을 방해하는 경우</li>
+                                                <li>3. 수신자의 의사에 반하는 광고성 정보, 전자우편을 전송하는 경우</li>
+                                                <li>4. 정보통신설비의 오작동이나 정보 등의 파괴를 유발하는 컴퓨터 바이러스 프로그램등을 유포하는 경우</li>
+                                                <li>5. 정보통신윤리위원회로부터의 이용제한 요구 대상인 경우</li>
+                                                <li>6. 선거관리위원회의 유권해석 상의 불법선거운동을 하는 경우</li>
+                                                <li>7. 서비스를 이용하여 얻은 정보를 교육정보원의 동의 없이 상업적으로 이용하는 경우</li>
+                                                <li>8. 비실명 이용자번호로 가입되어 있는 경우</li>
+                                                <li>9. 일정기간 이상 서비스에 로그인하지 않거나 개인정보 수집․이용에 대한 재동의를 하지 않은 경우</li>
+                                            </ol>
+                                        </li>
+                                        <li>③ 전항의 규정에 의하여 이용자의 이용을 제한하는 경우와 제한의 종류 및 기간 등 구체적인 기준은 교육정보원의 공지, 서비스 이용안내, 개인정보처리방침 등에서 별도로 정하는
+                                            바에 의합니다.</li>
+                                        <li>④ 해지 처리된 이용자의 정보는 법령의 규정에 의하여 보존할 필요성이 있는 경우를 제외하고 지체 없이 파기합니다.</li>
+                                        <li>⑤ 해지 처리된 이용자번호의 경우, 재사용이 불가능합니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 12 조 (이용자 게시물의 삭제 및 서비스 이용 제한)</h3>
+                                    <ol>
+                                        <li>① 교육정보원은 서비스용 설비의 용량에 여유가 없다고 판단되는 경우 필요에 따라 이용자가 게재 또는 등록한 내용물을 삭제할 수 있습니다.</li>
+                                        <li>② 교육정보원은 서비스용 설비의 용량에 여유가 없다고 판단되는 경우 이용자의 서비스 이용을 부분적으로 제한할 수 있습니다.</li>
+                                        <li>③ 제 1 항 및 제 2 항의 경우에는 당해 사항을 사전에 온라인을 통해서 공지합니다.</li>
+                                        <li>④ 교육정보원은 이용자가 게재 또는 등록하는 서비스내의 내용물이 다음 각호에 해당한다고 판단되는 경우에 이용자에게 사전 통지 없이 삭제할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 다른 이용자 또는 제 3자를 비방하거나 중상모략으로 명예를 손상시키는 경우</li>
+                                                <li>2. 공공질서 및 미풍양속에 위반되는 내용의 정보, 문장, 도형 등을 유포하는 경우</li>
+                                                <li>3. 반국가적, 반사회적, 범죄적 행위와 결부된다고 판단되는 경우</li>
+                                                <li>4. 다른 이용자 또는 제3자의 저작권 등 기타 권리를 침해하는 경우</li>
+                                                <li>5. 게시 기간이 규정된 기간을 초과한 경우</li>
+                                                <li>6. 이용자의 조작 미숙이나 광고목적으로 동일한 내용의 게시물을 10회 이상 반복하여 등록하였을 경우</li>
+                                                <li>7. 기타 관계 법령에 위배된다고 판단되는 경우</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 13 조 (서비스 제공의 중지 및 제한)</h3>
+                                    <ol>
+                                        <li>① 교육정보원은 다음 각 호에 해당하는 경우 서비스 제공을 중지할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 서비스용 설비의 보수 또는 공사로 인한 부득이한 경우</li>
+                                                <li>2. 전기통신사업법에 규정된 기간통신사업자가 전기통신 서비스를 중지했을 때</li>
+                                            </ol>
+                                        </li>
+                                        <li>② 교육정보원은 국가비상사태, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 서비스 이용에 지장이 있는 때에는 서비스 제공을 중지하거나 제한할 수 있습니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 14 조 (교육정보원의 의무)</h3>
+                                    <ol>
+                                        <li>① 교육정보원은 교육정보원에 설치된 서비스용 설비를 지속적이고 안정적인 서비스 제공에 적합하도록 유지하여야 하며 서비스용 설비에 장애가 발생하거나 또는 그 설비가 못쓰게 된
+                                            경우 그 설비를 수리하거나 복구합니다.</li>
+                                        <li>② 교육정보원은 서비스 내용의 변경 또는 추가사항이 있는 경우 그 사항을 온라인을 통해 서비스 화면에 공지합니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 15 조 (개인정보보호)</h3>
+                                    <ol>
+                                        <li>① 교육정보원은 공공기관의 개인정보보호에 관한 법률, 정보통신이용촉진등에 관한 법률 등 관계법령에 따라 이용신청시 제공받는 이용자의 개인정보 및 서비스 이용중 생성되는
+                                            개인정보를 보호하여야 합니다.</li>
+                                        <li>② 교육정보원의 개인정보보호에 관한 관리책임자는 학술연구정보서비스 이용자 관리담당 부서장(학술정보본부)이며, 주소 및 연락처는 대구광역시 동구 동내로 64(동내동 1119)
+                                            KERIS빌딩, 전화번호 054-714-0114번, 전자메일 privacy@keris.or.kr 입니다. 개인정보 관리책임자의 성명은 별도로 공지하거나 서비스 안내에
+                                            게시합니다.</li>
+                                        <li>③ 교육정보원은 개인정보를 이용고객의 별도의 동의 없이 제3자에게 제공하지 않습니다. 다만, 다음 각 호의 경우는 이용고객의 별도 동의 없이 제3자에게 이용 고객의
+                                            개인정보를 제공할 수 있습니다.
+                                            <ol class="left">
+                                                <li>1. 수사상의 목적에 따른 수사기관의 서면 요구가 있는 경우에 수사협조의 목적으로 국가 수사 기관에 성명, 주소 등 신상정보를 제공하는 경우</li>
+                                                <li>2. 신용정보의 이용 및 보호에 관한 법률, 전기통신관련법률 등 법률에 특별한 규정이 있는 경우</li>
+                                                <li>3. 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우</li>
+                                            </ol>
+                                        </li>
+                                        <li>④ 이용자는 언제나 자신의 개인정보를 열람할 수 있으며, 스스로 오류를 수정할 수 있습니다. 열람 및 수정은 원칙적으로 이용신청과 동일한 방법으로 하며, 자세한 방법은
+                                            공지, 이용안내에 정한 바에 따릅니다.
+                                            <!--
+                                                                <ol class="left">
+                                                                    <li>1. 수사상의 목적에 따른 수사기관의 서면 요구가 있는 경우에 수사협조의 목적으로 국가 수사 기관에 성명, 주소 등 신상정보를 제공하는 경우</li>
+                                                                    <li>2. 신용정보의 이용 및 보호에 관한 법률, 전기통신관련법률 등 법률에 특별한 규정이 있는 경우</li>
+                                                                    <li>3. 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우</li>
+                                                                </ol>
+                                                                -->
+                                        </li>
+                                        <li>⑤ 이용자는 언제나 이용계약을 해지함으로써 개인정보의 수집 및 이용에 대한 동의, 목적 외 사용에 대한 별도 동의, 제3자 제공에 대한 별도 동의를 철회할 수 있습니다.
+                                            해지의 방법은 이 약관에서 별도로 규정한 바에 따릅니다.</li>
+                                        <!--
+                                                            <li>⑥ 이용자는 언제나 이용계약을 해지함으로써 개인정보의 수집 및 이용에 대한 동의, 목적 외 사용에 대한 별도 동의, 제3자 제공에 대한 별도 동의를 철회할 수 있습니다. 해지의 방법은 이 약관에서 별도로 규정한 바에 따릅니다.</li>
+                                                            -->
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 16 조 (이용자의 의무)</h3>
+                                    <ol>
+                                        <li>① 이용자는 서비스를 이용할 때 다음 각 호의 행위를 하지 않아야 합니다.
+                                            <ol class="left">
+                                                <li>1. 다른 이용자의 이용자번호를 부정하게 사용하는 행위</li>
+                                                <li>2. 서비스를 이용하여 얻은 정보를 교육정보원의 사전승낙없이 이용자의 이용이외의 목적으로 복제하거나 이를 출판, 방송 등에 사용하거나 제3자에게 제공하는 행위
+                                                </li>
+                                                <li>3. 다른 이용자 또는 제3자를 비방하거나 중상모략으로 명예를 손상하는 행위</li>
+                                                <li>4. 공공질서 및 미풍양속에 위배되는 내용의 정보, 문장, 도형 등을 타인에게 유포하는 행위</li>
+                                                <li>5. 반국가적, 반사회적, 범죄적 행위와 결부된다고 판단되는 행위</li>
+                                                <li>6. 다른 이용자 또는 제3자의 저작권등 기타 권리를 침해하는 행위</li>
+                                                <li>7. 기타 관계 법령에 위배되는 행위</li>
+                                            </ol>
+                                        </li>
+                                        <li>② 이용자는 이 약관에서 규정하는 사항과 서비스 이용안내 또는 주의사항을 준수하여야 합니다.</li>
+                                        <li>③ 이용자가 설치하는 단말기 등은 전기통신설비의 기술기준에 관한 규칙이 정하는 기준에 적합하여야 하며, 서비스에 장애를 주지 않아야 합니다.</li>
+                                    </ol>
+                                </li>
+                                <li class="margin">
+                                    <h3>제 17 조 (광고의 게재)</h3>
+                                    교육정보원은 서비스의 운용과 관련하여 서비스화면, 홈페이지, 전자우편 등에 광고 등을 게재할 수 있습니다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 4 장 서비스 이용 요금</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 18 조 (이용요금)</h3>
+                                    <ol>
+                                        <li>① 서비스 이용료는 기본적으로 무료로 합니다. 단, 민간업체와의 협약에 의해 RISS를 통해 서비스 되는 콘텐츠의 경우 각 민간 업체의 요금 정책에 따라 유료로 서비스
+                                            합니다.</li>
+                                        <li>② 그 외 교육정보원의 정책에 따라 이용 요금 정책이 변경될 경우에는 온라인으로 서비스 화면에 게시합니다.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 5 장 마일리지 정책</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 19 조 (마일리지 정책의 변경)</h3>
+                                    <ol>
+                                        <li>① RISS 마일리지는 2017년 1월부로 모두 소멸되었습니다.</li>
+                                        <li>② 교육정보원은 마일리지 적립ㆍ사용ㆍ소멸 등 정책의 변경에 대해 온라인상에 공지해야하며, 최근에 온라인에 등재된 내용이 이전의 모든 규정과 조건보다 우선합니다.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 6 장 저작권</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 20 조 (게재된 자료에 대한 권리) </h3>
+                                    서비스에 게재된 자료에 대한 권리는 다음 각 호와 같습니다.
+                                    <ol>
+                                        <li>① 게시물에 대한 권리와 책임은 게시자에게 있으며, 교육정보원은 게시자의 동의 없이는 이를 영리적 목적으로 사용할 수 없습니다. </li>
+                                        <li>② 게시자의 사전 동의가 없이는 이용자는 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 상업적 목적으로 이용할 수 없습니다.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>제 7 장 이의 신청 및 손해배상 청구 금지</h2>
+                            <ol>
+                                <li>
+                                    <h3>제 21 조 (이의신청금지) </h3>
+                                    이용자는 교육정보원에서 제공하는 서비스 이용시 발생되는 어떠한 문제에 대해서도 무료 이용 기간 동안은 이의 신청 및 민원을 제기할 수 없습니다.
+                                </li>
+                                <li class="margin">
+                                    <h3>제 22 조 (손해배상청구금지)</h3>
+                                    이용자는 교육정보원에서 제공하는 서비스 이용시 발생되는 어떠한 문제에 대해서도 무료 이용 기간 동안은 교육정보원 및 관계 기관에 손해배상 청구를 할 수 없으며 교육정보원은 이에 대해
+                                    책임을 지지 아니합니다.
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="last margin">
+                            <h2>부칙</h2>
+                            이 약관은 2000년 6월 1일부터 시행합니다.
+                        </li>
+                        <li class="last">
+                            <h2>부칙(개정 2005. 5. 31)</h2>
+                            이 약관은 2005년 5월 31일부터 시행합니다.
+                        </li>
+                        <li class="last">
+                            <h2>부칙(개정 2010. 1. 1)</h2>
+                            이 약관은 2010년 1월 1일부터 시행합니다.
+                        </li>
+                        <li class="last">
+                            <h2>부칙(개정 2010. 4 1)</h2>
+                            이 약관은 2010년 4월 1일부터 시행합니다.
+                        </li>
+                        <li class="last">
+                            <h2>부칙(개정 2017. 1 1)</h2>
+                            이 약관은 2017년 1월 1일부터 시행합니다.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- clausePop -->
+    </div>
+    <!-- //divWrapper -->
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:NotoSans;
+    src:url(../fonts/NotoSansCJKkr-Regular.eot);
+    src:local('※'), url(../fonts/NotoSansCJKkr-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:NotoSansM;
+    src:url(../fonts/NotoSansCJKkr-Medium.eot);
+    src:local('※'), url(../fonts/NotoSansCJKkr-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:Pretendard;
+    src:url(../fonts/Pretendard-Regular.eot);
+    src:local('※'), url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardM;
+    src:url(../fonts/Pretendard-Medium.eot);
+    src:local('※'), url(../fonts/Pretendard-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardSB;
+    src:url(../fonts/Pretendard-SemiBold.eot);
+    src:local('※'), url(../fonts/Pretendard-SemiBold.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardB;
+    src:url(../fonts/Pretendard-Bold.eot);
+    src:local('※'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:GmarketL;
+    src:url(../fonts/GmarketSansLight.eot);
+    src:local('※'), url(../fonts/GmarketSansLight.woff) format('woff');
+}
+@font-face{
+    font-family:GmarketM;
+    src:url(../fonts/GmarketSansMedium.eot);
+    src:local('※'), url(../fonts/GmarketSansMedium.woff) format('woff');
+}
+@font-face{
+    font-family:GmarketB;
+    src:url(../fonts/GmarketSans-Bold.eot);
+    src:local('※'), url(../fonts/GmarketSans-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:Roboto;
+    src:url(../fonts/Roboto-Regular.eot);
+    src:local('※'), url(../fonts/Roboto-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:RobotoL;
+    src:url(../fonts/Roboto-Light.eot);
+    src:local('※'), url(../fonts/Roboto-Light.woff) format('woff');
+}
+@font-face{
+    font-family:RobotoM;
+    src:url(../fonts/Roboto-Medium.eot);
+    src:local('※'), url(../fonts/Roboto-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:RobotoB;
+    src:url(../fonts/Roboto-Bold.eot);
+    src:local('※'), url(../fonts/Roboto-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:Barlow;
+    src:url(../fonts/Barlow-Regular.eot);
+    src:local('※'), url(../fonts/Barlow-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:BarlowSCL;
+    src:url(../fonts/BarlowSemiCondensed-ExtraLight.eot);
+    src:local('※'), url(../fonts/BarlowSemiCondensed-ExtraLight.woff) format('woff');
+}
+@font-face{
+    font-family:BarlowSCR;
+    src:url(../fonts/BarlowSemiCondensed-Regular.eot);
+    src:local('※'), url(../fonts/BarlowSemiCondensed-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:BarlowSCM;
+    src:url(../fonts/BarlowSemiCondensed-Medium.eot);
+    src:local('※'), url(../fonts/BarlowSemiCondensed-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:BarlowSCB;
+    src:url(../fonts/BarlowSemiCondensed-Bold.eot);
+    src:local('※'), url(../fonts/BarlowSemiCondensed-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:MetroB;
+    src:url(../fonts/Metropolis-Bold.eot);
+    src:local('※'), url(../fonts/Metropolis-Bold.woff) format('woff');
+}

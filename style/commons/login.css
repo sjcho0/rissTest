@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* 로그인 페이지 */
+.loginW{position:relative;padding:40px 8px 0 8px;}
+.loginW a.goMain{position:absolute;left:10px;top:40px;width:22px;height:18px;}
+.loginW h1.logo{margin-bottom:30px;padding-top:40px;text-align:center;}
+.loginW h1.logo img {width:206px;height:auto}
+.loginW h3.tit{color:#2a2a2a;font-size:18px;line-height:20px;}
+.loginW .rissLogin .login ul li{margin-bottom: 11px; position: relative;}
+.loginW .rissLogin .login ul li:last-child{margin-bottom:0;}
+.loginW .rissLogin .login ul li .imgW{position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 1;}
+.loginW .rissLogin .login ul li .imgW img {display:block}
+.loginW .rissLogin .login ul li .imgW .on{display: none;}
+.loginW .rissLogin .login ul li .inputW{position: relative;}
+.loginW .rissLogin .login ul li input{width:100%;height: 48px; padding:0 12px 0 47px;font-size:1.071rem;border:none;box-sizing: border-box;background-color: transparent;border: 1px solid #cccccc;border-radius: 6px;}
+.loginW .rissLogin .login ul li input:focus{outline: 0; border: 1px solid #ff7200;}
+.loginW .rissLogin .login ul li .inputW .placeholder{position: absolute; top: 50%; left: 47px; transform: translateY(-50%); color:#7d7d7d; font-size: 1.071rem;}
+.loginW .rissLogin .login ul li .inputW .placeholder.on{display: none;}
+.loginW .rissLogin .login ul li.active .imgW .off{display: none;}
+.loginW .rissLogin .login ul li.active .imgW .on{display: block;}
+.loginW .rissLogin .login ul li.active input{padding: 16px 12px 0 47px;font-size: 1rem;box-sizing: border-box;background-color: transparent;}
+.loginW .rissLogin .login ul li.active .inputW .placeholder{top: 5px;transform: translateY(0);font-size: 0.857rem;}
+.loginW .rissLogin .login ul li.active .inputW .placeholder.off{display: none;}
+.loginW .rissLogin .login ul li.active .inputW .placeholder.on{display: block;}
+.loginW .rissLogin .loginError {font-size: 1rem;  color: #ff7200; padding-left: 20px; background: url(../../images/commons/alert.png) no-repeat left top 3px; margin: 10px 0;}
+.loginW .rissLogin .findW{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; margin-top: 24px; margin-bottom: 22px;}
+.loginW .rissLogin .divkeepLogin{display: inline-block; position: relative;}
+.loginW .rissLogin .divkeepLogin input{width: 0; height: 0; position: absolute; left: 10px; top: 10px; z-index: -1;}
+.loginW .rissLogin .divkeepLogin .customChk1 + label {padding-left:24px}
+.loginW .rissLogin p.find{display:inline-block; text-align:center;}
+.loginW .rissLogin p.find a{display: inline-block; margin:0 8px;color:#999999;font-size:14px; line-height: 18px;}
+.loginW .rissLogin .loginBtn{cursor:pointer}
+.loginW .rissLogin .loginBtn input[type="submit"]{width:100%; height:52px; text-align:center; color:#fff; font-size:16px;border-radius: 5px; border:none;background-color:#ff7200; cursor:pointer}
+
+/* SNS Login */
+.loginW .snsLogin{margin-top: 47px; margin-bottom: 40px;text-align: center;}
+.loginW .snsLogin .tit {margin-bottom:12px;font-size:1.142rem;font-family: PretendardSB,sans-serif;}
+.loginW .snsLogin .login ul{text-align:center;}
+.loginW .snsLogin .login ul li {display:inline-block;margin:0 4px}
+.loginW .snsLogin .login ul li>a {display:block;width:40px;height:40px;}
+.loginW .loginHelp{display:block; margin-bottom: 90px;}
+.loginW .loginHelp .btnHelp{display:inline-block;margin-bottom:15px;padding-bottom:5px;color:#0078f5;font-size:15px;border-bottom:1px solid #0078f5;}
+.loginW .loginHelp .txt p{color:#181818;font-size:14px;line-height:22px; text-align: center; }
+.loginW .loginHelp .txt p.color{color:#ff7200;}
+.loginW .loginHelp .txt p.strong{color:#4f4f4f;}
+.point3{color:#0078f5;}
+/* 하단 */
+.loginW .btmArea{margin-top:27px;padding-bottom:70px;}
+.loginW .btmArea p{color:#686868;font-size:14px;line-height:20px;text-align:center;}
+
+@media screen and (max-width:370px) {
+    .loginW .rissLogin .findW {display:block}
+    .loginW .rissLogin .divkeepLogin {display:block;margin-bottom:4px}
+    .loginW .rissLogin p.find {display:block;text-align: left;}
+    .loginW .rissLogin p.find a:first-child {margin-left:0}
+}
+@media screen and (max-width:330px) {
+    .loginW h1.logo img {width:100%;height:auto}
+}
