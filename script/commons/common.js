@@ -144,7 +144,10 @@ $(document).ready(function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-	 $('#divSearch').scrollTop(0);
+	 
+	 setTimeout(function(){
+		$('#divSearch').scrollTop(0);	 
+	 },400);
 	 
 });
 
