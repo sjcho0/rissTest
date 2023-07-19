@@ -147,7 +147,7 @@ $(document).ready(function(){
 	 
 	 setTimeout(function(){
 		$('#divSearch').scrollTop(0);	 
-	 },400);
+	 },1000);
 	 
 });
 
