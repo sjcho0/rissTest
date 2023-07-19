@@ -140,7 +140,7 @@ $(document).ready(function(){
 
  //검색상세화면 뜨는 팝업
  $('.searchInputW').on('click focus', function(){
-  $('html, body').css({'overflow':'hidden'});
+  $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
