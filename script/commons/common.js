@@ -151,7 +151,6 @@ $(window).on("resize",function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-   $('#divSearch').css({'touch-action': 'none','-ms-touch-action': 'none'});
 });
 
 $('.searchClose').click(function(){
