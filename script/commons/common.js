@@ -145,7 +145,7 @@ $(document).ready(function(){
   $('#divSearch').addClass('on');
   var searchTimeout = setTimeout(function(){
     $('#divSearch .searchTop .searchInput').focus();
-   }.bind(this),700);
+   },700);
 });
 
 $('.searchClose').click(function(){
