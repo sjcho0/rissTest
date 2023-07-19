@@ -128,7 +128,7 @@ $(document).ready(function() {
         $('.blackBg1').show();
         $('#divSearch').addClass('on');
         $('#divSearch .searchTop .searchInput').focus();
-	alert("update1");
+
         //0초 후 포커스
 		setTimeout(function(){
 			$('.searchInputW .searchInput').focus();
