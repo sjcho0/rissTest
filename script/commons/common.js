@@ -147,7 +147,7 @@ $(window).on("resize",function(){
   appHeight();
 })
  $('.searchInputW').on('click focus', function(){
-  $('html, body').css('overflow','hidden');
+  $('html, body').css({'overflow':'hidden','touch-action': 'none','-ms-touch-action': 'none'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
