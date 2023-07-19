@@ -143,9 +143,9 @@ $(document).ready(function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-   setTimeout(function(){
-    $('#divSearch .searchTop .searchInput').click();
-   },700);
+  var searchTimeout = setTimeout(function(){
+    $('#divSearch .searchTop .searchInput').focus();
+   }.bind(this),700);
 });
 
 $('.searchClose').click(function(){
