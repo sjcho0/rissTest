@@ -144,7 +144,7 @@ $(document).ready(function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
    setTimeout(function(){
-    $('#divSearch .searchTop .searchInput').focus();
+    $('#divSearch .searchTop .searchInput').click();
    },700);
 });
 
