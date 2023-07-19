@@ -144,7 +144,8 @@ $(document).ready(function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-	 $('#divSearch').css("overflow","hidden");
+	 $('#divSearch').scrollTop(0);
+	 $('html, body').scrollTop(0);
 	 
 
 	 
