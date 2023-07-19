@@ -142,11 +142,11 @@ $(document).ready(function(){
  $('.searchInputW').on('click focus', function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
-  $('#divSearch').addClass('on');
-     
-   setTimeout(function(){
+  $('#divSearch').addClass('on',function(){
+	  setTimeout(function(){
 			$('#divSearch .searchTop .searchInput').focus();
-	},300);
+	},500);
+  });
 });
 
 $('.searchClose').click(function(){
