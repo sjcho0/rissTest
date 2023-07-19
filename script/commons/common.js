@@ -146,7 +146,7 @@ $(document).ready(function(){
      
    setTimeout(function(){
 			$('#divSearch .searchTop .searchInput').focus();
-		},0);
+	},300);
 });
 
 $('.searchClose').click(function(){
