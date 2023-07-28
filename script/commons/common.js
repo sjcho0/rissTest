@@ -139,23 +139,29 @@ $(document).ready(function(){
   });
 
  //검색상세화면 뜨는 팝업
- $('.searchInputW').on('click focus', function(){
+$('.searchInputW').on('click focus', function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  //$('#divSearch .searchTop .searchInput').focus();
-   $('.searchInputW .searchInput').focus();
-    // setTimeout(function(){
-      
-    // },500);
+  // $('#divSearch .searchTop .searchInput').focus();
+   //0초 후 포커스
+  //  var timer = setTimeout(function(){
+    
+  // },100, true);
+  $('#divSearch').animate({"bottom":"0"},function(){
+    $('.searchInputW .searchInput').focus();
+  })
+  
 });
 
 $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
+  $('#divSearch').animate({"bottom":"-100%"})
   return false;
 });
+
 
 $('.shBtn').click(function(){
   if($(this).hasClass('on')){
