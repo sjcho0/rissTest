@@ -149,8 +149,10 @@ $('.searchInputW').on('click focus', function(){
     
   // },100, true);
   $('#divSearch').show();
-  $('#divSearch').animate({"bottom":"0"},function(){
-    $('.searchInputW .searchInput').focus();
+  $('#divSearch').animate({"bottom":"0"},300,function(){
+    setTimeout(function(){
+      $('.searchInputW .searchInput').focus();
+      },700);
   })
   
 });
