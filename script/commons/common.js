@@ -148,7 +148,7 @@ $('.searchInputW').on('click focus', function(){
   //  var timer = setTimeout(function(){
     
   // },100, true);
-
+  $('#divSearch').show();
   $('#divSearch').animate({"bottom":"0"},function(){
     $('.searchInputW .searchInput').focus();
   })
