@@ -149,6 +149,7 @@ $('.searchInputW').on('click focus', function(){
   },100);
 });
   $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
+     alert("ios");
         $('.searchInputW .searchInput').focus();
     });
 $('.searchClose').click(function(){
