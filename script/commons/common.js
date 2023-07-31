@@ -146,12 +146,12 @@ $('.searchInputW').on('click focus', function(){
     //0초 후 포커스
   setTimeout(function(){
     $('.searchInputW .searchInput').focus();
-  },100);
+  },100).bind($('.searchInputW .searchInput'));
 });
-  $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
-     alert("ios");
-        $('.searchInputW .searchInput').focus();
-    });
+  // $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
+  //    alert("ios");
+  //       $('.searchInputW .searchInput').focus();
+  //   });
 $('.searchClose').click(function(){
   $('html, body').css({'overflow':'auto'});
   $('.blackBg1').hide();
