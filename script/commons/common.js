@@ -143,6 +143,7 @@ $('.searchInputW').on('click focus', function(){
   $('html, body, #divWrapper').css({'overflow':'hidden','touch-action':'none','-ms-touch-action':'none'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
+  $('#divSearch').css('overflow-y','hidden');
   $('#divSearch .searchTop .searchInput').focus();
    /* Disable scroll */
   $('html, body').on('scroll touchmove mousewheel', function(e){
@@ -151,7 +152,9 @@ $('.searchInputW').on('click focus', function(){
         return false;
   });
 });
-
+$('#divSearch .searchTop .searchInput').on('focusout',function(){
+  $('#divSearch').css('overflow-y','auto');
+});
 $('.searchClose').click(function(){
   $('html, body, #divWrapper').removeAttr('style');
   $('.blackBg1').hide();
