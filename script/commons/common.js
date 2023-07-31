@@ -147,6 +147,10 @@ $('.searchInputW').on('click focus', function(){
   $('#divSearch').css('height',window.innerHeight);
   $('#divSearch .searchTop .searchInput').focus();
 });
+  $('#divSearch .searchTop .searchInput').on("focus",function(){
+    $('#divSearch').css('height',window.innerHeight);
+    $('#divSearch').animate("scrollTop",0);
+  });
 $('.searchClose').click(function(){
   $('html, body, #divWrapper').removeAttr('style');
   $('body').css('position','static');
