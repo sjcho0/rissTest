@@ -143,8 +143,11 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  $('.searchInputW .searchInput').focus();
+  
 });
+  $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
+        $('.searchInputW .searchInput').focus();
+    });
 $('.searchClose').click(function(){
   $('html, body').css({'overflow':'auto'});
   $('.blackBg1').hide();
