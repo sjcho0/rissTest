@@ -147,7 +147,7 @@ $('.searchInputW').on('click focus', function(){
   $('#divSearch .searchTop .searchInput').focus();
 });
   $('#divSearch .searchTop .searchInput').on("focus",function(){
-    $('#divSearch').css('height',window.innerHeight);
+    $('#divSearch').css('height',window.innerHeight());
     $('#divSearch').scrollTop(0);
   });
 $('.searchClose').click(function(){
