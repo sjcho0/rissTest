@@ -140,8 +140,7 @@ $(document).ready(function(){
 
  //검색상세화면 뜨는 팝업
 $('.searchInputW').on('click focus', function(){
-  $('html, body, #divWrapper').css({'overflow':'hidden'});
-  $('body').css('position','fixed');
+  $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch').css('height',window.innerHeight);
@@ -149,10 +148,9 @@ $('.searchInputW').on('click focus', function(){
 });
   $('#divSearch .searchTop .searchInput').on("focus",function(){
     $('#divSearch').css('height',window.innerHeight);
-    $('#divSearch').animate("scrollTop",0);
+    $('#divSearch').scrollTop(0);
   });
 $('.searchClose').click(function(){
-  $('html, body, #divWrapper').removeAttr('style');
   $('body').css('position','static');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
