@@ -151,9 +151,9 @@ $('.searchInputW').on('click focus', function(){
   $('#divSearch').show();
   
   $('#divSearch').animate({"bottom":"0"},300,function(){
-    $('.searchInputW .searchInput').focus();
-  })
   
+  })
+    $('.searchInputW .searchInput').focus();
 });
 
 $('.searchClose').click(function(){
