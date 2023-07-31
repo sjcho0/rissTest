@@ -140,7 +140,7 @@ $(document).ready(function(){
 
  //검색상세화면 뜨는 팝업
 $('.searchInputW').on('click focus', function(){
-  $('html, body').css('overflow','hidden');
+  $('html, body').css({'overflow':'hidden','touch-action':'none','-ms-touch-action':'none'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
@@ -153,7 +153,7 @@ $('.searchInputW').on('click focus', function(){
 });
 
 $('.searchClose').click(function(){
-  $('html, body').css('overflow','visible');
+  $('html, body').removeAttr('style');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
   /* Enable scroll */
