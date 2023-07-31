@@ -143,27 +143,15 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  // $('#divSearch .searchTop .searchInput').focus();
-   //0초 후 포커스
-  //  var timer = setTimeout(function(){
-    
-  // },100, true);
-  $('#divSearch').show();
-  
-  $('#divSearch').animate({"bottom":"0"},300,function(){
-  
-  })
-    $('.searchInputW .searchInput').focus();
+  $('#divSearch .searchTop .searchInput').focus();
+    // $('.searchInputW .searchInput').focus();
 });
 
 $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
+  $('#divSearch').removeClass('on');
   
-  $('#divSearch').animate({"bottom":"-100%"},function(){
-    $('#divSearch').hide();  
-    $('#divSearch').removeClass('on');
-  })
   return false;
 });
 
