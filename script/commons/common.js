@@ -140,23 +140,15 @@ $(document).ready(function(){
 
  //검색상세화면 뜨는 팝업
 $('.searchInputW').on('click focus', function(){
-  $('html, body, #divWrapper').css({'overflow':'hidden','touch-action':'none','-ms-touch-action':'none'});
+  $('html, body, #divWrapper').css({'overflow':'hidden'});
+  $('body').css('position','fixed');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  $('#divSearch').css('overflow-y','hidden');
   $('#divSearch .searchTop .searchInput').focus();
-   /* Disable scroll */
-  $('html, body').on('scroll touchmove mousewheel', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-  });
-});
-$('#divSearch .searchTop .searchInput').on('focusout',function(){
-  $('#divSearch').css('overflow-y','auto');
 });
 $('.searchClose').click(function(){
   $('html, body, #divWrapper').removeAttr('style');
+  $('body').css('position','static');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
   /* Enable scroll */
