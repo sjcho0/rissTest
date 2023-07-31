@@ -150,11 +150,11 @@ $('.searchInputW').on('click focus', function(){
   // },100, true);
   $('#divSearch').show();
   $('.searchInputW .searchInput').focus();
-  $('#divSearch').animate({"bottom":"0"},300,function(){
-    setTimeout(function(){
+  // $('#divSearch').animate({"bottom":"0"},300,function(){
+  //   setTimeout(function(){
       
-      },700);
-  })
+  //     },700);
+  // })
   
 });
 
