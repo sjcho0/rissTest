@@ -146,7 +146,7 @@ $('.searchInputW').on('click focus', function(){
     //0초 후 포커스
   setTimeout(function(){
     $('.searchInputW .searchInput').focus();
-  },100).bind($('.searchInputW .searchInput'));
+  },100).bind(this);
 });
   // $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
   //    alert("ios");
