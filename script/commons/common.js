@@ -144,6 +144,7 @@ $('.searchInputW').on('click focus', function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
+  $('#divSearch").scrollTop(0);
     // $('.searchInputW .searchInput').focus();
 });
 
