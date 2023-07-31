@@ -162,7 +162,7 @@ $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
-  $('#divSearch').animate({"bottom":"-100%"})
+  // $('#divSearch').animate({"bottom":"-100%"})
   return false;
 });
 
