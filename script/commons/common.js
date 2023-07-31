@@ -149,21 +149,21 @@ $('.searchInputW').on('click focus', function(){
     
   // },100, true);
   $('#divSearch').show();
-  $('.searchInputW .searchInput').focus();
-  // $('#divSearch').animate({"bottom":"0"},300,function(){
-  //   setTimeout(function(){
-      
-  //     },700);
-  // })
+  
+  $('#divSearch').animate({"bottom":"0"},300,function(){
+    $('.searchInputW .searchInput').focus();
+  })
   
 });
 
 $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
-  $('#divSearch').removeClass('on');
-  $('#divSearch').hide();
-  // $('#divSearch').animate({"bottom":"-100%"})
+  
+  $('#divSearch').animate({"bottom":"-100%"},function(){
+    $('#divSearch').hide();  
+    $('#divSearch').removeClass('on');
+  })
   return false;
 });
 
