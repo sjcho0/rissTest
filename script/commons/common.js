@@ -143,7 +143,7 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  $('#divSearch').css('height',window.innerHeight);
+  $('#divSearch').css('height',window.innerHeight());
   $('#divSearch .searchTop .searchInput').focus();
 });
   $('#divSearch .searchTop .searchInput').on("focus",function(){
