@@ -143,7 +143,10 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  
+    //0초 후 포커스
+  setTimeout(function(){
+    $('.searchInputW .searchInput').focus();
+  },100);
 });
   $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
         $('.searchInputW .searchInput').focus();
