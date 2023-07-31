@@ -144,7 +144,7 @@ $('.searchInputW').on('click focus', function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-  $('#divSearch").css("overflow", "scroll");  
+  $('#divSearch').css("overflow", "scroll");  
     // $('.searchInputW .searchInput').focus();
 });
 
@@ -152,7 +152,7 @@ $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
-  $('#divSearch").css("overflow", "hidden");  
+  $('#divSearch').css("overflow", "hidden");  
   return false;
 });
 
