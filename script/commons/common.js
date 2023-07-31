@@ -144,6 +144,7 @@ $('.searchInputW').on('click focus', function(){
   $('body').css('position','fixed');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
+  $('#divSearch').css('height',window.innerHeight);
   $('#divSearch .searchTop .searchInput').focus();
 });
 $('.searchClose').click(function(){
@@ -151,8 +152,7 @@ $('.searchClose').click(function(){
   $('body').css('position','static');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
-  /* Enable scroll */
-  $('html, body').off('scroll touchmove mousewheel');
+  $('#divSearch').removeAttr("style");
   return false;
 });
 
