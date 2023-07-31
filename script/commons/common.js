@@ -143,8 +143,9 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css('overflow','hidden');
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-  $('#divSearch .searchTop .searchInput').focus();
-  $('#divSearch").animate({scrollTop: 0});
+  $('#divSearch .searchTop .searchInput').focus(function(){
+    $('#divSearch").animate({scrollTop: 0});  
+  });
     // $('.searchInputW .searchInput').focus();
 });
 
