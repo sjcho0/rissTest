@@ -144,14 +144,20 @@ $('.searchInputW').on('click focus', function(){
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
   $('#divSearch .searchTop .searchInput').focus();
-  $('#divSearch').delay(300).animate("overflow", "0");  
-    // $('.searchInputW .searchInput').focus();
+   /* Disable scroll */
+  $('html, body').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+  });
 });
 
 $('.searchClose').click(function(){
   $('html, body').css('overflow','visible');
   $('.blackBg1').hide();
   $('#divSearch').removeClass('on');
+  /* Enable scroll */
+  $('html, body').off('scroll touchmove mousewheel');
   return false;
 });
 
