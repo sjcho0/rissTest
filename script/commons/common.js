@@ -143,15 +143,11 @@ $('.searchInputW').on('click focus', function(){
   $('html, body').css({'overflow':'hidden'});
   $('.blackBg1').show();
   $('#divSearch').addClass('on');
-    //0초 후 포커스
-  setTimeout(function(){
-    $('.searchInputW .searchInput').focus();
-  },100).bind(this);
+    //포커스
+  $('.searchInputW .searchInput').focus();
+  
 });
-  // $('#divSearch').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) {
-  //    alert("ios");
-  //       $('.searchInputW .searchInput').focus();
-  //   });
+
 $('.searchClose').click(function(){
   $('html, body').css({'overflow':'auto'});
   $('.blackBg1').hide();
